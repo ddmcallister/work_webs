@@ -1,0 +1,153 @@
+*{
+	box-sizing: border-box;
+}
+#test {
+	width: 600px;
+
+}
+
+#seal {
+	position: relative;
+	width:200px;
+	height: 200px;
+	background: url(../img/28seal.png) no-repeat;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header, form {
+	padding: 4em 10%;
+}
+
+header {
+	background-color: #077ABC;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+span {
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: #32CCFE;
+}
+
+a:hover {
+	color: white;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+h2.heading {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: left;
+	color: #506982;
+	border-bottom: 1px solid #506982;
+	padding-bottom: 3px;
+	margin-bottom: 20px;
+}
+
+.controls{
+	text-align: left;
+	position: relative;
+	padding: 12px;
+	font-size: 14px;
+	border: 1px solid #c6c6c6;
+	width: 100%;
+	margin-bottom: 18px;
+	color: #888;
+	font-family: 'Lato', 'sans-serif';
+	font-size: 16px;
+	font-weight: 300;
+    background-color: #fff;
+}
+
+.controls:hover  {
+	cursor: text;
+	border: 2px solid #9FB1C1;
+}
+
+.controls:focus  {
+	cursor: text;
+	border: 2px solid #9FB1C1;
+}
+
+/*.controls:hover.label  {
+	cursor: text;
+	color: #077ABC;
+	border: 2px solid #9FB1C1;
+}*/
+
+input {
+	border: none;
+	-webkit-appearance: caret;
+	appearance: caret;
+}
+
+select{
+	appearance: none;
+	cursor: pointer;
+}
+
+.floatlabel {
+	position: absolute;
+}
+
+label{
+	position: relative;
+	left: 8px;
+	color: #999;
+	font-size: 16px;
+	display: inline-block;
+	padding: 4px 10px;
+	font-weight: 400;
+	background-color: rgba(255,255,255,0);
+/*	-webkit-transition: color .3s, top .3s, background-color .8s;
+	-moz-transition: color .3s, top .3s, background-color .8s;
+	transition: color .3s, top .3s, background-color .8s;*/
+}
+
+/*.controls:focus {
+	top: -11px;
+	color: #555;
+	background-color: rgba(255,255,255,1);
+}*/
+
+textarea {
+	resize: none;
+	height: 100px;
+	width: 100%;
+}
+
+#comment-container {
+	border: none;
+}
+
+button{
+	cursor: pointer;
+	background-color: #07B3A1;
+	border: none;
+	color: #fff;
+	padding: 12px 0;
+	width: 15%;
+	margin-top: 2em;
+}
+
+button:hover {
+		background-color: #09e4cd;
+}
