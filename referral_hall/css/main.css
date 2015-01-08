@@ -70,8 +70,6 @@ h2.heading {
 	border: 1px solid #c6c6c6;
 	width: 100%;
 	margin-bottom: 18px;
-	color: #888;
-	font-family: 'Lato', 'sans-serif';
 	font-size: 16px;
 	font-weight: 300;
     background-color: #fff;
@@ -87,16 +85,14 @@ h2.heading {
 	border: 2px solid #9FB1C1;
 }
 
-/*.controls:hover.label  {
-	cursor: text;
-	color: #077ABC;
-	border: 2px solid #9FB1C1;
-}*/
-
 input {
 	border: none;
 	-webkit-appearance: caret;
 	appearance: caret;
+}
+
+input:focus {
+	color: orange;
 }
 
 select{
@@ -108,25 +104,31 @@ select{
 	position: absolute;
 }
 
-label{
+label {
 	position: relative;
+	width: 100%;
+	height: 100%;
 	left: 8px;
-	color: #999;
+	color: yellow;
 	font-size: 16px;
 	display: inline-block;
 	padding: 4px 10px;
 	font-weight: 400;
 	background-color: rgba(255,255,255,0);
-/*	-webkit-transition: color .3s, top .3s, background-color .8s;
-	-moz-transition: color .3s, top .3s, background-color .8s;
-	transition: color .3s, top .3s, background-color .8s;*/
 }
 
-/*.controls:focus {
+label:hover {
+	color: green;
+}
+
+label.focus {
 	top: -11px;
 	color: #555;
 	background-color: rgba(255,255,255,1);
-}*/
+	-webkit-transition: color .3s, top .3s, background-color .8s;
+	-moz-transition: color .3s, top .3s, background-color .8s;
+	transition: color .3s, top .3s, background-color .8s;
+}
 
 textarea {
 	resize: none;
