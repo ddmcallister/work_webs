@@ -12,29 +12,25 @@ innerFun();
 }
 test();*/
 
+function main() {
 
 
-(function($){
-	function floatLabel(inputType){
-		$(inputType).each(function(){
-			var $this = $(this);
+	$('.floatlabel').click(function() {
+		$(this).next().addClass('active');
+	});
 
-			$this.focus(function(){
-				alert( "5 to 1." );
-
-				$this.next().addClass("active");
-			});
-			//on blur check field and remove class if needed
-			$this.blur(function(){
-				if($this.val() === '' || $this.val() === 'blank'){
-					$this.next().removeClass();
-				}
-			});
-		});
+	$('.floatlabel').blur(function(){
+  		//$(this).next().css('opacity', '1');
+  		if($(this).val() == '' || $(this).val() == 'blank' || $(this).val() == 'null'){
+		$(this).next().removeClass();
 	}
-	// just add a class of "floatLabel to the input field!"
-	floatLabel(".floatLabel");
-});
+
+	});
+
+}
+
+$(document).ready(main);
+
 
 /*window.onload = function() {
 	var seal = document.getElementById("seal");
