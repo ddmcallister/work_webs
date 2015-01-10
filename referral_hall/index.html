@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-
 	<head>
 		<title>referralhall.com</title>
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="js/TweenLite.min.js"></script>
-		<script type="text/javascript" src="js/EasePack.min.js"></script>
-		<script type="text/javascript" src="js/CSSPlugin.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/application.js"></script>
 	</head>
@@ -66,14 +63,35 @@
 			<label for="job-phone">Job Phone</label>
 		</div>
 		<div class="controls">
-			<select class="floatlabel">
-<!-- 				<i class="fa-sort"></i> -->
-				<option value="blank"></option>
+			 <label for="job-length">Estimated Job Length</label>
+ 			<select name="job-length" id="job-length">
+				<option selected value="blank"></option>
 				<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
 				<option value="standard">Standard: <span>may last more than 12 business days</span></option>
 			</select>
-			<label for="job-length">Estimated Job Length</label>
+
 		</div>
+	</div>
+	<div class="form-group">
+		<h2 class="heading">Workforce Info</h2>
+		<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
+		<select multiple>
+  			<option value="shop">Shop Mechanic</option>
+  			<option value="field">Field Mechanic</option>
+  			<option value="welder">Welder (uncertified)</option>
+  			<option value="c-welder">Certified Welder</option>
+  			  <option value="h-sketcher">Sketcher/hand</option>
+  			<option value="c-sketcher">Sketcher/cad</option>
+  			<option value="roofer">Roofer</option>
+  			<option value="decker">Decker</option>
+  			<option value="sider">Sider</option>
+  			<option value="tab">Testing and Balancing</option>
+  			<option value="enclosure">Enclosures</option>
+  			<option value="fan-maint">Fan Maintenance</option>
+</select>
+
+		</div>
+	</div>
 
 <div class="form-group">
     <h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>

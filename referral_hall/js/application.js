@@ -1,32 +1,16 @@
-/*function test() { 
-var aD = document.getElementsByClassName("controls");
-console.log(aD);
-var b = [];
-	function innerFun() {
-    for(q = 0; q < aD.length; q++) {
-    b.push(aD[q].innerText);
-    console.log(b);
-}
-innerFun();
-    }
-}
-test();*/
-
 function main() {
 
-
-	$('.floatlabel').click(function() {
+	$('.floatlabel').focus(function() {
+		//$(this).off('hover');
+		$(this).addClass('test');
 		$(this).next().addClass('active');
 	});
 
 	$('.floatlabel').blur(function(){
-  		//$(this).next().css('opacity', '1');
   		if($(this).val() == '' || $(this).val() == 'blank' || $(this).val() == 'null'){
 		$(this).next().removeClass();
-	}
-
+		}
 	});
-
 }
 
 $(document).ready(main);
