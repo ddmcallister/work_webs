@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>referralhall.com</title>
-		<link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css"/>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
 	</head>
 
 	<header>
-
+		<div id="seal"></div>
 		<h1>Local 28 Referral Hall <span>Information for Contractors</span></h1>
 		<div>Request workers using the form below, <a href="">get instructions</a> or read our tips on <a href="">making the Referral Hall work for you</a>.</div>
 	</header>
@@ -64,7 +64,7 @@
 		</div>
 		<div class="controls">
 			 <label for="job-length">Estimated Job Length</label>
- 			<select name="job-length" id="job-length">
+ 			<select name="job-length" id="job-length" class="select-style">
 				<option selected value="blank"></option>
 				<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
 				<option value="standard">Standard: <span>may last more than 12 business days</span></option>
@@ -75,7 +75,8 @@
 	<div class="form-group">
 		<h2 class="heading">Workforce Info</h2>
 		<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
-		<select multiple>
+		<div class="select-style">
+		<select multiples id="specialties">
   			<option value="shop">Shop Mechanic</option>
   			<option value="field">Field Mechanic</option>
   			<option value="welder">Welder (uncertified)</option>
@@ -88,6 +89,7 @@
   			<option value="tab">Testing and Balancing</option>
   			<option value="enclosure">Enclosures</option>
   			<option value="fan-maint">Fan Maintenance</option>
+  		</div>
 </select>
 
 		</div>
@@ -97,11 +99,9 @@
     <h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>
     <div class="controls" id="comment-container">
       <textarea name="comments" class="floatLabel" id="comments"></textarea>
-      <label for="comments"></label>
       <button>Submit</button>
     </div>
 </div>
 </form>
-		<div id="seal"></div>
 	</body>
 </html>
