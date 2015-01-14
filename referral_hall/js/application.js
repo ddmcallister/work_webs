@@ -10,6 +10,23 @@ function main() {
 		$(this).next().removeClass();
 		}
 	});
+
+	$('.specialties').click(function() {
+		$(this).toggleClass('spec-select');
+	});
+
+	$('#add-request').click(function() {
+
+
+		}
+			)
+
+		$('#spec-button').click(function() {
+
+
+		}
+			)
+
 }
 
 $(document).ready(main);
