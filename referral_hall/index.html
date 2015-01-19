@@ -3,11 +3,12 @@
 <html>
 	<head>
 		<title>referralhall.com</title>
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/underscore-min.js"></script>
 		<script type="text/javascript" src="js/application.js"></script>
 	</head>
 
@@ -71,7 +72,6 @@
 				<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
 				<option value="standard">Standard: <span>may last more than 12 business days</span></option>
 			</select>
-
 		</div>
 	</div>
 	<div class="form-group">
@@ -79,45 +79,31 @@
 		<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
 		<div class="request-line">
 			<div id="spec-container">
-  			<div class="specialties">Shop Mechanic</div>
-  			<div class="specialties">Field Mechanic</div>
-  			<div class="specialties">Welder (uncertified)</div>
-  			<div class="specialties">Certified Welder</div>
-  			<div class="specialties">Sketcher/hand</div>
-  			<div class="specialties">Sketcher/cad</div>
-  			<div class="specialties">Roofer</div>
-  			<div class="specialties">Decker</div>
-  			<div class="specialties">Sider</div>
-  			<div class="specialties">Testing and Balancing</div>
-  			<div class="specialties">Enclosures</div>
-  			<div class="specialties">Fan Maintenance</div>
+  			<div class="specialties" id="shop">Shop Mechanic</div>
+  			<div class="specialties" id="field">Field Mechanic</div>
+  			<div class="specialties" id="welding">Welder (uncertified)</div>
+  			<div class="specialties" id="certified_welding">Certified Welder</div>
+  			<div class="specialties" id="hand_sketching">Sketcher/hand</div>
+  			<div class="specialties" id="cad_sketching">Sketcher/cad</div>
+  			<div class="specialties" id="roofing">Roofer</div>
+  			<div class="specialties" id="decking">Decker</div>
+  			<div class="specialties" id="siding">Sider</div>
+  			<div class="specialties" id="tab">Testing and Balancing</div>
+  			<div class="specialties" id="enclosures">Enclosures</div>
+  			<div class="specialties" id="fan_maintenance">Fan Maintenance</div>
   		</div>
   		<label for="quantity">Number of Workers</label>
   			<input type="number" name="quantity" id="quantity" min="1" max="25" step="1">
-  		<input type="hidden" name="spec-line">
 	</div>
-
-<!-- 		<div class="select-style" class="request">
-			<label for="specialties">Specialty/Specialties</label>
-		<select multiple id="specialties">
-  			<option value="shop" class="specialties-o">Shop Mechanic</option>
-  			<option value="field" class="specialties-o">Field Mechanic</option>
-  			<option value="welder" class="specialties-o">Welder (uncertified)</option>
-  			<option value="c-welder" class="specialties-o">Certified Welder</option>
-  			  <option value="h-sketcher" class="specialties-o">Sketcher/hand</option>
-  			<option value="c-sketcher" class="specialties-o">Sketcher/cad</option>
-  			<option value="roofer" class="specialties-o">Roofer</option>
-  			<option value="decker" class="specialties-o">Decker</option>
-  			<option value="sider" class="specialties-o">Sider</option>
-  			<option value="tab" class="specialties-o">Testing and Balancing</option>
-  			<option value="enclosure" class="specialties-o">Enclosures</option>
-  			<option value="fan-maint" class="specialties-o">Fan Maintenance</option>
-  		</select>
-  		<label for="quantity">Number of Workers</label>
-  			<input type="number" name="quantity" id="quantity" min="1" max="25" step="1">
-	</div> -->
-	<div id="add-request">Add a request line</div>
+	<div id="save-line">
+		<div>Save this request <i class="fa fa-floppy-o" id="save"></i></div>
+	</div>
+	<div id="add-request">
+		<div>Request more workers with different specialties <i class="fa fa-plus-circle" id="add"></i></div>
+	</div>
+	<div id="request_one"></div>
 	<div id="spec-button">Finalize Workforce Info</div>
+  		<input type="hidden" name="spec-line" id="spec-line">
 </div>
 <div class="form-group">
     <h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>

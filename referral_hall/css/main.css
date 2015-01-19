@@ -157,14 +157,28 @@ label.active {
 
 }
 
-#add-request {
-	width: 20%;
-	background-color: #94BA65;
-	cursor: pointer;
-	color: white;
-	padding: .5em;
-	display: inline-block;
+#num-line {
+		display: inline-block;
+}
 
+#qlabel {
+	display: inline-block;
+}
+#num-box {
+	width: 5%;
+	height: 16px;
+	outline: 1px solid #c6c6c6;
+	display: inline-block;
+	position: absolute;
+
+}
+
+#add {
+	cursor: pointer;
+}
+
+#save {
+	cursor: pointer;
 }
 
 #spec-button {
@@ -174,6 +188,11 @@ label.active {
 	color: white;
 	padding: .5em;
 	display: inline-block;
+}
+
+.request_conf {
+
+	
 }
 
 textarea {
