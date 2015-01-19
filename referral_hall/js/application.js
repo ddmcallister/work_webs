@@ -25,36 +25,30 @@ function main() {
 		for (i=0; i<heyhey.length; i++) {
 			$.each(heyhey, function(index, value) {
 				reqArr.push(value.id);
-				var dupElim = _.uniq(reqArr, JSON.stringify);
-/*			console.log(dupElimA);
-
-				var dupElim = dupElimA.replace(/,/g, ", ");*/
-				
-				console.log(dupElim);
+				var dupElim = _.uniq(reqArr);
 				var num = document.getElementById("quantity").value;
-				console.log(num);
-
-				initDiv.innerHTML = "Current request:" + "" + num + " " + dupElim + "(s)";
+				initDiv.innerHTML = "number: " + num + "; specialties: " + dupElim.join(", ");
         		target.appendChild(initDiv);
-
-
         		$('input[name="spec-line"]').val($(initDiv).html());
-
         		var testy = document.getElementById("spec-line");
 				console.log(testy);
 			});
 		}
 	});
 
+//below clears form, need to figure out how to add new request line
+	 $('#add').click(function() {
+	 		$('.specialties').removeClass('spec-select');
+	 		$('#quantity').val('');
+
+	 	}
+	 		);
+
+
 }
 
 
 
-	// $('#add').click(function() {
-
-
-	// 	}
-	// 		);
 
 	// 	$('#spec-button').click(function() {
 

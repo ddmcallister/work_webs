@@ -158,11 +158,13 @@ label.active {
 }
 
 #num-line {
-		display: inline-block;
+	display: block;
 }
 
 #qlabel {
 	display: inline-block;
+	left: 0;
+	padding-left: 0;
 }
 #num-box {
 	width: 5%;
@@ -171,6 +173,14 @@ label.active {
 	display: inline-block;
 	position: absolute;
 
+}
+
+#request_one {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #c6c6c6;
+	border-radius: 3px;
+	padding: 12px;
 }
 
 #add {
