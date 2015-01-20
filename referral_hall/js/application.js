@@ -15,46 +15,47 @@ function main() {
 		$(this).toggleClass('spec-select');
 	});
 
-	var target = document.getElementById("request_one");
-    var initDiv = document.createElement("div");
-    initDiv.className = "request_conf";
+var reqArr = [];
+$('#save').click(function() {
+    var selected = document.getElementsByClassName("spec-select");
+    var num = document.getElementById("quantity").value;
+    for (i=0; i<selected.length; i++) {
+		$.each(selected, function(index, value) {
+			reqArr.push(value.id);
+        });
+    }
+	var dupElim = _.uniq(reqArr);
+    var testTarg = document.getElementById("request_one");
+    var newcontent = document.createElement('div');
+    newcontent.innerHTML = "number: " + num + "; specialties: " + dupElim.join(", ");
 
-	$('#save').click(function() {
-		var reqArr = [];
-		var heyhey = document.getElementsByClassName("spec-select");
-		for (i=0; i<heyhey.length; i++) {
-			$.each(heyhey, function(index, value) {
-				reqArr.push(value.id);
-				var dupElim = _.uniq(reqArr);
-				var num = document.getElementById("quantity").value;
-				initDiv.innerHTML = "number: " + num + "; specialties: " + dupElim.join(", ");
-        		target.appendChild(initDiv);
-        		$('input[name="spec-line"]').val($(initDiv).html());
-        		var testy = document.getElementById("spec-line");
-				console.log(testy);
-			});
-		}
-	});
+	while (newcontent.firstChild) {
+		request_one.appendChild(newcontent.firstChild);
+	}
+	$('.specialties').removeClass('spec-select');
+	reqArr = [];
+	$('#quantity').val('');
+});
 
-//below clears form, need to figure out how to add new request line
-	 $('#add').click(function() {
-	 		$('.specialties').removeClass('spec-select');
-	 		$('#quantity').val('');
+$('#add').click(function() {
 
-	 	}
-	 		);
+	 	});
 
+/* 	$('#spec-button').click(function() {
+		$('input[name="spec-line"]').val($('#request_one').html());
+		var testy = document.getElementById("spec-line");
+		console.log(testy);
+ 	});*/
+
+ 	$('#submit').click(function() {
+		$('input[name="spec-line"]').val($('#request_one').html());
+		var testy = document.getElementById("spec-line");
+		console.log(testy);
+ 	});
 
 }
 
 
-
-
-	// 	$('#spec-button').click(function() {
-
-
-	// 	}
-	// 		)
 
 
 

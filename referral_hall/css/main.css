@@ -32,9 +32,10 @@ header {
 /*	background-color: #077ABC;*/
 /*	background-color: #152B3C;*/
 /*	background-color: #2B4E72;*/
-	background: url(../img/rulerinspriation.jpeg) no-repeat;
-	background-color: #88ABC2;
-	color: #152B3C;
+/*	background: url(../img/rulerinspriation.jpeg) no-repeat;
+	background-color: #88ABC2;*/
+	background-color: #033649;
+	color: white;
 	background-size: cover;
 	background-position: center;
 }
@@ -114,6 +115,7 @@ label {
 	height: 100%;
 	left: 8px;
 	color: #4E4D4A;
+
 	font-size: 16px;
 	display: inline-block;
 	padding: 4px 10px;
@@ -148,7 +150,7 @@ label.active {
 }
 
 .spec-select {
-	background-color: #9A927B;
+	background-color: #94BA65;
 }
 
 #quantity {
@@ -181,6 +183,7 @@ label.active {
 	border: 1px solid #c6c6c6;
 	border-radius: 3px;
 	padding: 12px;
+	width: 45%;
 }
 
 #add {
@@ -192,13 +195,17 @@ label.active {
 }
 
 #spec-button {
+	cursor: pointer;
+}
+
+/*#spec-button {
 	width: 20%;
 	background-color: #94BA65;
 	cursor: pointer;
 	color: white;
 	padding: .5em;
 	display: inline-block;
-}
+}*/
 
 .request_conf {
 
