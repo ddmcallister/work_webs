@@ -15,48 +15,58 @@ function main() {
 		$(this).toggleClass('spec-select');
 	});
 
-var reqArr = [];
-$('#save').click(function() {
-    var selected = document.getElementsByClassName("spec-select");
-    var num = document.getElementById("quantity").value;
-    for (i=0; i<selected.length; i++) {
+	var reqArr = [];
+	$('#spec-line').val(' ');
+	$('#save').click(function() {
+	    var selected = document.getElementsByClassName("spec-select");
+	    var num = document.getElementById("quantity").value;
+	    $('#spec-line').val(' ');
 		$.each(selected, function(index, value) {
 			reqArr.push(value.id);
-        });
-    }
-	var dupElim = _.uniq(reqArr);
-    var testTarg = document.getElementById("request_one");
-    var newcontent = document.createElement('div');
-    newcontent.innerHTML = "number: " + num + "; specialties: " + dupElim.join(", ");
+	    });
+		var requestLine = "number: " + num + "; specialties: " + reqArr.join(", ");
 
-	while (newcontent.firstChild) {
-		request_one.appendChild(newcontent.firstChild);
-	}
-	$('.specialties').removeClass('spec-select');
-	reqArr = [];
-	$('#quantity').val('');
-});
+		var newcontent = $('<textarea>').text(requestLine).addClass('confirmed');
+		console.log($(newcontent).val());
+		
+		if ($('#spec-line').val() == ' ') {
+			$('#spec-line').val(newcontent.val());
+		}
 
-$('#add').click(function() {
+/*	$('#spec-line')
+  	var myInput = $('input[name="spec-line"]');
+  	console.log($(myInput).val());
 
-	 	});
+	$('.confirmed').each(function(){
+     	myInput.val += newcontent.val + ' ';
+  	});
 
-/* 	$('#spec-button').click(function() {
-		$('input[name="spec-line"]').val($('#request_one').html());
+  	console.log($('.confirmed').val());*/
+
+		$('#request_one').append(newcontent);
+		$('.specialties').removeClass('spec-select');
+		reqArr = [];
+		$('#quantity').val('');
 		var testy = document.getElementById("spec-line");
 		console.log(testy);
- 	});*/
+	});
 
- 	$('#submit').click(function() {
-		$('input[name="spec-line"]').val($('#request_one').html());
-		var testy = document.getElementById("spec-line");
-		console.log(testy);
- 	});
+$('#clear').click(function() { 
+	$('.confirmed').empty();
+	$('#spec-line').val(' ');
+	console.log("doing something");
+	var testy = document.getElementById("spec-line");
+	console.log(testy);
+
+}); 
+/*
+
+	$('input[name="spec-line"]').removeData();
+	$('#request_one > div').val('');
+	var testy = document.getElementById("spec-line");
+	console.log(testy);
+	 	});*/
 
 }
-
-
-
-
 
 $(document).ready(main);

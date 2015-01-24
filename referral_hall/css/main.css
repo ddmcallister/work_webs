@@ -11,29 +11,11 @@
 	background: url(../img/28seal.png) no-repeat;
 }*/
 
-
-
 body {
 	font-family: 'Roboto', sans-serif;
 }
 
-p {
-	color: #555;
-}
-
-header, form {
-	padding: 4em 10%;
-}
-
-#main {
-}
-
 header {
-/*	background-color: #077ABC;*/
-/*	background-color: #152B3C;*/
-/*	background-color: #2B4E72;*/
-/*	background: url(../img/rulerinspriation.jpeg) no-repeat;
-	background-color: #88ABC2;*/
 	background-color: #033649;
 	color: white;
 	background-size: cover;
@@ -42,23 +24,46 @@ header {
 
 h1 {
 	text-align: center;
-	font-weight: 400;
+	font-weight: 500;
 	text-transform: uppercase;
-	font-size: 50px;
-	margin-bottom: 10px;
+	font-size: 3.5em;
+	margin: 0 0 .5em 0;
 }
 
 span {
-	font-weight: 300;
+	font-weight: 200;
+	text-transform: none;
+}
+
+#header-instruc {
+	font-size: 1.5em;
+	color: white;
+	font-weight: 200;
+	line-height: 1.5em;
+	text-align: center;
 }
 
 a {
 	text-decoration: none;
 	color: #94BA65;
+	font-weight: 200;
 }
 
 a:hover {
 	color: white;
+	text-decoration: underline;
+}
+
+header, form {
+	padding: 3em 10%;
+}
+
+#bar {
+	width: 1.5em;
+	height: 300%;
+	margin: -19em 0 0 1em;
+	background-color: orange;
+	position: absolute;
 }
 
 .form-group {
@@ -104,7 +109,6 @@ input {
 	appearance: caret;
 }
 
-
 .floatlabel {
 	position: absolute;
 }
@@ -115,7 +119,6 @@ label {
 	height: 100%;
 	left: 8px;
 	color: #4E4D4A;
-
 	font-size: 16px;
 	display: inline-block;
 	padding: 4px 10px;
@@ -130,6 +133,10 @@ label.active {
 	-webkit-transition: color .3s, top .3s, background-color .1s;
 	-moz-transition: color .3s, top .3s, background-color .1s;
 	transition: color .3s, top .3s, background-color .1s;
+}
+
+p {
+	color: #555;
 }
 
 #spec-container {
@@ -150,13 +157,14 @@ label.active {
 }
 
 .spec-select {
-	background-color: #94BA65;
+	background-color: #2790B0;
+	color: black;
+	font-weight: 600;
 }
 
 #quantity {
 	outline: 1px solid #c6c6c6;
 	display: inline-block;
-
 }
 
 #num-line {
@@ -184,32 +192,19 @@ label.active {
 	border-radius: 3px;
 	padding: 12px;
 	width: 45%;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
-#add {
-	cursor: pointer;
+.confirmed {
+	border: none;
+	height: auto;
+	font-size: 16px;;
+
 }
 
-#save {
+#clear {
 	cursor: pointer;
-}
-
-#spec-button {
-	cursor: pointer;
-}
-
-/*#spec-button {
-	width: 20%;
-	background-color: #94BA65;
-	cursor: pointer;
-	color: white;
-	padding: .5em;
-	display: inline-block;
-}*/
-
-.request_conf {
-
-	
 }
 
 textarea {
