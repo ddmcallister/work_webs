@@ -20,7 +20,6 @@ function main() {
 	$('#save').click(function() {
 	    var selected = document.getElementsByClassName("spec-select");
 	    var num = document.getElementById("quantity").value;
-	    $('#spec-line').val(' ');
 		$.each(selected, function(index, value) {
 			reqArr.push(value.id);
 	    });
@@ -28,20 +27,12 @@ function main() {
 
 		var newcontent = $('<textarea>').text(requestLine).addClass('confirmed');
 		console.log($(newcontent).val());
-		
+
 		if ($('#spec-line').val() == ' ') {
 			$('#spec-line').val(newcontent.val());
+		} else {
+			$('#spec-line').val($('#spec-line').val() + " " + (newcontent.val()));
 		}
-
-/*	$('#spec-line')
-  	var myInput = $('input[name="spec-line"]');
-  	console.log($(myInput).val());
-
-	$('.confirmed').each(function(){
-     	myInput.val += newcontent.val + ' ';
-  	});
-
-  	console.log($('.confirmed').val());*/
 
 		$('#request_one').append(newcontent);
 		$('.specialties').removeClass('spec-select');
@@ -52,7 +43,8 @@ function main() {
 	});
 
 $('#clear').click(function() { 
-	$('.confirmed').empty();
+	//$('.confirmed').empty();
+	$('.confirmed').remove();
 	$('#spec-line').val(' ');
 	console.log("doing something");
 	var testy = document.getElementById("spec-line");
