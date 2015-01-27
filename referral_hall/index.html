@@ -15,8 +15,9 @@
 	<body>
 	<header>
 		<div id="seal"></div>
-		<h1>Local 28 Referral Hall <span>Workforce Requests</span></h1>
-		<p id="header-instruc">Request workers using the form below, <a href="instructions.html" tabindex = "0">get instructions</a>, <a href="">leave feedback</a> or <a href="tips.html" tabindex = "0">read our tips</a> on making the Referral Hall work for you.</p>
+		<h1>Local 28 Referral Hall <h1>
+		<h1 id="subhead">Workforce Requests</h1>
+		<p class="header-sentnc">Request workers using the form below, <a href="instructions.html" tabindex = "0">get instructions</a>, <a href="">leave feedback</a> or <a href="tips.html" tabindex = "0">read our tips</a> on making the Referral Hall work for you.</p>
 	</header>
 
 	<div id="main">
@@ -85,8 +86,8 @@
 			</div>
 		 	<div class="form-group">
 				<h2 class="heading">Workforce Info</h2>
-				<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
-				<div class="request-line">
+				<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.
+				<div class="left-col">
 					<div id="spec-container" tabindex = "55">
 			  			<div class="specialties" id="shop">Shop Mechanic</div>
 			  			<div class="specialties" id="field">Field Mechanic</div>
@@ -106,17 +107,17 @@
 			  			<input type="number" name="quantity" id="quantity" max="25" step="1" tabindex = "60">
 			  		</div>
 					<div id="save-line">
-						<div>Add This Request <i class="fa fa-plus-circle" id="save" tabindex = "65"></i></div>
+						<div>Add This Request <span id="save" tabindex = "65"<i class="fa fa-plus"></i></span></div>
 					</div>
 				</div>
-				<div id="confirm_area">
+				<div class="right-col">
 		   			<div id="request_one"><label for="request_one">You have requested ...</label></div>
 		   			<div id="clear-request">
-						<div>Clear Specialties Request <i class="fa fa-undo" id="clear" tabindex = "70"></i></div>
+						<p>Clear Specialties Request <span id="clear" tabindex = "70"<i class="fa fa-undo"></i></span></p>
 					</div>
 				</div>
-		 	</div>
-		  	<input type="hidden" name="spec-line" id="spec-line">
+		  		<input type="hidden" name="spec-line" id="spec-line">
+		  	</div>
 			<div class="form-group">
 		    	<h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>
 		    	<div class="controls" id="comment-container">
@@ -125,11 +126,9 @@
 		      	</div>
 		    </div>
 		</form>
+		<div id="pdf-line">
+			<p>Download a pdf of this form.<span id="pdf"<i class="fa fa-file-pdf-o"></i></span></p>
+		</div>
 	</div>
-
-	<div id="footer">
-		<p>Download a pdf of this form.<i class="fa fa-file-pdf-o"></i></p>
-	</div>
-	
 	</body>
 </html>
