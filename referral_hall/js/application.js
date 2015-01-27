@@ -43,7 +43,6 @@ function main() {
 	});
 
 $('#clear').click(function() { 
-	//$('.confirmed').empty();
 	$('.confirmed').remove();
 	$('#spec-line').val(' ');
 	console.log("doing something");
@@ -51,13 +50,17 @@ $('#clear').click(function() {
 	console.log(testy);
 
 }); 
-/*
 
-	$('input[name="spec-line"]').removeData();
-	$('#request_one > div').val('');
-	var testy = document.getElementById("spec-line");
-	console.log(testy);
-	 	});*/
+$('.summary').click(function() {
+	$(this).next().toggle();
+});
+
+
+// $( "#showr" ).click(function() {
+//   $( "div" ).first().show( "fast", function showNext() {
+//     $( this ).next( "div" ).show( "fast", showNext );
+//   });
+// });
 
 }
 

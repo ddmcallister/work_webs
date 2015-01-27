@@ -11,10 +11,6 @@
 	background: url(../img/28seal.png) no-repeat;
 }*/
 
-html {
-
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
@@ -67,12 +63,16 @@ header, form {
 	margin-top: -2em;
 }
 
-.form-group {
-	margin-bottom: 20px;
-	margin-top: 3em;
+#main-instruct, #main-tips {
+	margin: 2em;
 }
 
-h2.heading {
+.form-group {
+	margin-bottom: 20px;
+	margin-top: 2em;
+}
+
+h2.heading, .summary {
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -84,19 +84,34 @@ h2.heading {
 	margin-top: 10px;
 }
 
+.summary {
+	text-transform: none;
+}
+
 .controls{
-	text-align: left;
 	position: relative;
 	padding: 12px;
 	border: 1px solid #c6c6c6;
 	border-radius: 3px;
-	width: 100%;
-	margin-bottom: 28px;
+	text-align: left;	
+	margin-bottom: 1.75em;
 	font-size: 16px;
 	font-weight: 300;
 	-webkit-box-shadow: 10px 10px 5px #888888;
 	-moz-box-shadow: 10px 10px 5px #888888;
 	box-shadow: 10px 10px 5px #888888;
+}
+
+.left-col {
+	display: inline-block;
+	width: 44%;
+	margin-right: 10%;
+}
+
+.right-col {
+	display: inline-block;
+	width: 44%;
+	float: right;
 }
 
 .test {
@@ -138,6 +153,7 @@ label.active {
 
 p {
 	color: #555;
+	line-height: 1.5em;
 }
 
 #spec-container {
@@ -147,7 +163,7 @@ p {
 	margin-bottom: 2em;
 	font-size: 16px;
     background-color: #fff;
-    width: 30%;
+    width: 100%;
     display: inline-block;
     -webkit-box-shadow: 10px 10px 5px #888888;
     -moz-box-shadow: 10px 10px 5px #888888;
@@ -169,6 +185,7 @@ p {
 #num-line {
 	display: block;
 	margin-left: -1em;
+	margin-bottom: 2em;
 }
 
 #quantity {
@@ -176,7 +193,6 @@ p {
 	display: inline-block;
 	border-radius: 3px;
 	width: 5%;
-	margin-bottom: 2em;
 }
 
 #quantity label {
@@ -191,8 +207,7 @@ p {
 	border: 1px solid #c6c6c6;
 	border-radius: 3px;
 	padding: 12px;
-	width: 45%;
-	margin-top: 2em;
+	width: 150%;
 	margin-bottom: 2em;
 	-webkit-box-shadow: 10px 10px 5px #888888;
 	-moz-box-shadow: 10px 10px 5px #888888;
@@ -208,22 +223,34 @@ p {
 
 #save-line {
 	color: #4E4D4A;
-	font-size: 16px;	
+	font-size: 16px;
+	margin-bottom: 2em;	
 }
 
 .confirmed {
 	border: none;
 	height: auto;
-	font-size: 16px;;
+	font-size: 16px;
+	margin-left: .5em;
 }
 
 #clear-request {
 	color: #4E4D4A;
-	font-size: 16px;	
+	font-size: 16px;
+	margin-bottom: 2em;	
 }
 
 #clear {
 	cursor: pointer;
+}
+.request-line {
+	display: inline-block;
+
+}
+#confirm_area {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15%;
 }
 
 textarea {
@@ -254,10 +281,25 @@ button{
 	margin-top: 2em;
 	font-size: 16px;
 	border-radius: 3px;
-	margin-left: -1em;
+/*	margin-left: -1em;*/
+	vertical-align: middle;
+
 }
 
 button:hover {
 	background-color: #94BA65;
 	color: #033649;
+}
+
+#footer {
+	float: right;
+}
+
+/*for tips page*/
+.expand {
+	cursor: pointer;
+}
+
+.detail {
+	display: none;
 }

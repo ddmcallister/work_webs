@@ -11,110 +11,125 @@
 		<script type="text/javascript" src="js/underscore-min.js"></script>
 		<script type="text/javascript" src="js/application.js"></script>
 	</head>
+
+	<body>
 	<header>
 		<div id="seal"></div>
 		<h1>Local 28 Referral Hall <span>Workforce Requests</span></h1>
-		<p id="header-instruc">Request workers using the form below, <a href="" tabindex = "0">get instructions</a> or read our tips on <a href="" tabindex = "0">making the Referral Hall work for you</a>.</p>
+		<p id="header-instruc">Request workers using the form below, <a href="instructions.html" tabindex = "0">get instructions</a>, <a href="">leave feedback</a> or <a href="tips.html" tabindex = "0">read our tips</a> on making the Referral Hall work for you.</p>
 	</header>
 
 	<div id="main">
+		<form method="post" action="mailto:destanie@gmail.com" enctype="text/plain">
+			<div class="form-group">
+				<h2 class="heading">Company Info</h2>
+				<div class="left-col">
+					<div class="controls">
+						<input type="text" id="name" class="floatlabel" name="name" tabindex = "1">
+						<label for="name">Contractor Name</label>
+					</div>
+					<div class="controls">
+						<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "5">
+						<label for="myname">My Name</label>
+					</div>
+				</div>
+				<div class="right-col">
+					<div class="controls">
+						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "10">
+						<label for="phone">Phone</label>
+					</div>
+					<div class="controls">
+						<input type="email" id="email" class="floatlabel" name="email" tabindex = "15">
+						<label for="email">Email</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<h2 class="heading">Job Info</h2>
+				<div class="left-col">
+					<div class="controls">
+						<input type="text" id="site-name" class="floatlabel" name="site-name" tabindex = "20">
+						<label for="site-name">Site Name</label>
+					</div>	
+					<div class="controls">
+						<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "30">
+						<label for="start-date">Start Date</label>
+					</div>	
+					<div class="controls">
+						<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "40">
+						<label for="contact">Contact/Foreman</label>
+					</div>
+				</div>
+				<div class="right-col">
+					<div class="controls">
+						<input type="text" id="address" class="floatlabel" name="address" tabindex = "25">
+						<label for="address">Address</label>
+					</div>
+					<div class="controls">
+						<input type="text" id="time" class="floatlabel" name="time" tabindex = "35">
+						<label for="time">Start Time</label>
+					</div>
+					<div class="controls">
+						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "45">
+						<label for="job-phone">Job Phone</label>
+					</div>
+				</div>
+				<div class="controls">
+					<label for="job-length">Estimated Job Length</label>
+		 			<select name="job-length" id="job-length" class="select-style" tabindex = "50">
+						<option selected value="blank"></option>
+						<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
+						<option value="standard">Standard: <span>may last more than 12 business days</span></option>
+					</select>
+				</div>
+			</div>
+		 	<div class="form-group">
+				<h2 class="heading">Workforce Info</h2>
+				<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
+				<div class="request-line">
+					<div id="spec-container" tabindex = "55">
+			  			<div class="specialties" id="shop">Shop Mechanic</div>
+			  			<div class="specialties" id="field">Field Mechanic</div>
+			  			<div class="specialties" id="welding">Welder (uncertified)</div>
+			  			<div class="specialties" id="certified_welding">Certified Welder</div>
+			  			<div class="specialties" id="hand_sketching">Sketcher/hand</div>
+			  			<div class="specialties" id="cad_sketching">Sketcher/cad</div>
+			  			<div class="specialties" id="roofing">Roofer</div>
+			  			<div class="specialties" id="decking">Decker</div>
+			  			<div class="specialties" id="siding">Sider</div>
+			  			<div class="specialties" id="tab">Testing and Balancing</div>
+			  			<div class="specialties" id="enclosures">Enclosures</div>
+			  			<div class="specialties" id="fan_maintenance">Fan Maintenance</div>
+			  		</div>
+			  		<div id= "num-line">
+			  			<label for="quantity">Number of Workers</label>
+			  			<input type="number" name="quantity" id="quantity" max="25" step="1" tabindex = "60">
+			  		</div>
+					<div id="save-line">
+						<div>Add This Request <i class="fa fa-plus-circle" id="save" tabindex = "65"></i></div>
+					</div>
+				</div>
+				<div id="confirm_area">
+		   			<div id="request_one"><label for="request_one">You have requested ...</label></div>
+		   			<div id="clear-request">
+						<div>Clear Specialties Request <i class="fa fa-undo" id="clear" tabindex = "70"></i></div>
+					</div>
+				</div>
+		 	</div>
+		  	<input type="hidden" name="spec-line" id="spec-line">
+			<div class="form-group">
+		    	<h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>
+		    	<div class="controls" id="comment-container">
+		      		<textarea name="comments" class="floatLabel" id="comments" tabindex = "80"></textarea>
+		      		<button id="submit" tabindex = "85">Submit</button>
+		      	</div>
+		    </div>
+		</form>
+	</div>
 
-	<form method="post" action="mailto:destanie@gmail.com" enctype="text/plain">
-	<div class="form-group">
-		<h2 class="heading">Company Info</h2>
-		<div class="controls">
-			<input type="text" id="name" class="floatlabel" name="name" tabindex = "1">
-			<label for="name">Contractor Name</label>
-		</div>
-		<div class="controls">
-			<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "5">
-			<label for="myname">My Name</label>
-		</div>
-		<div class="controls">
-			<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "10">
-			<label for="phone">Phone</label>
-		</div>
-		<div class="controls">
-			<input type="email" id="email" class="floatlabel" name="email" tabindex = "15">
-			<label for="email">Email</label>
-		</div>
+	<div id="footer">
+		<p>Download a pdf of this form.<i class="fa fa-file-pdf-o"></i></p>
 	</div>
-		<div class="form-group">
-		<h2 class="heading">Job Info</h2>
-		<div class="controls">
-			<input type="text" id="site-name" class="floatlabel" name="site-name" tabindex = "20">
-			<label for="site-name">Site Name</label>
-		</div>	
-		<div class="controls">
-			<input type="text" id="address" class="floatlabel" name="address" tabindex = "25">
-			<label for="address">Address</label>
-		</div>
-		<div class="controls">
-			<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "30">
-			<label for="start-date">Start Date</label>
-		</div>	
-		<div class="controls">
-			<input type="text" id="time" class="floatlabel" name="time" tabindex = "35">
-			<label for="time">Start Time</label>
-		</div>
-		<div class="controls">
-			<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "40">
-			<label for="contact">Contact/Foreman</label>
-		</div>
-		<div class="controls">
-			<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "45">
-			<label for="job-phone">Job Phone</label>
-		</div>
-		<div class="controls">
-			 <label for="job-length">Estimated Job Length</label>
- 			<select name="job-length" id="job-length" class="select-style" tabindex = "50">
-				<option selected value="blank"></option>
-				<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
-				<option value="standard">Standard: <span>may last more than 12 business days</span></option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group">
-		<h2 class="heading">Workforce Info</h2>
-		<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.</p>
-		<div class="request-line">
-			<div id="spec-container" tabindex = "55">
-  			<div class="specialties" id="shop">Shop Mechanic</div>
-  			<div class="specialties" id="field">Field Mechanic</div>
-  			<div class="specialties" id="welding">Welder (uncertified)</div>
-  			<div class="specialties" id="certified_welding">Certified Welder</div>
-  			<div class="specialties" id="hand_sketching">Sketcher/hand</div>
-  			<div class="specialties" id="cad_sketching">Sketcher/cad</div>
-  			<div class="specialties" id="roofing">Roofer</div>
-  			<div class="specialties" id="decking">Decker</div>
-  			<div class="specialties" id="siding">Sider</div>
-  			<div class="specialties" id="tab">Testing and Balancing</div>
-  			<div class="specialties" id="enclosures">Enclosures</div>
-  			<div class="specialties" id="fan_maintenance">Fan Maintenance</div>
-  		</div>
-  		<div id= "num-line">
-  		<label for="quantity">Number of Workers</label>
-  			<input type="number" name="quantity" id="quantity" max="25" step="1" tabindex = "60">
-  		</div>
-	</div>
-	<div id="save-line">
-		<div>Add This Request <i class="fa fa-plus" id="save" tabindex = "65"></i></div>
-	</div>
-   	<div id="request_one"><label for="request_one">You have requested ...</labe></div>
-   	<div id="clear-request">
-		<div>Clear Specialties Request <i class="fa fa-refresh" id="clear" tabindex = "70"></i></div>
-	</div>
-  		<input type="hidden" name="spec-line" id="spec-line">
-</div>
-<div class="form-group">
-    <h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>
-    <div class="controls" id="comment-container">
-      <textarea name="comments" class="floatLabel" id="comments" tabindex = "80"></textarea>
-      <button id="submit" tabindex = "85">Submit</button>
-      </form>
-    </div>
-</div>
-</form>
-</div>
+	
 	</body>
 </html>
