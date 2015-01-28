@@ -17,6 +17,11 @@ body {
 	border-left: .75em solid #E6F99D;
 }
 
+#tips-body {
+	padding-bottom: 2em;
+	background: linear-gradient(to bottom, #abbaab, #ffffff);
+}
+
 header {
 	background: -webkit-linear-gradient(left, #136a8a, #267871);
 	background: -o-linear-gradient(right, #136a8a, #267871);
@@ -79,7 +84,7 @@ header, form {
 	margin-top: 2em;
 }
 
-h2.heading, .summary {
+h2.heading {
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -89,10 +94,6 @@ h2.heading, .summary {
 	padding-bottom: .25em;
 	margin-bottom: 1.5em;
 	margin-top: .75em;
-}
-
-.summary {
-	text-transform: none;
 }
 
 .controls{
@@ -283,13 +284,20 @@ button:hover {
 }
 
 #pdf-line {
-	float: right;
+	width: auto;
+	margin-left: 65%;
 }
 
 /*for tips page*/
 .expand {
 	cursor: pointer;
 	color: #424242;
+	font-weight: 400;
+	text-align: left;
+	border-bottom: 1px solid #c6c6c6;
+	padding-bottom: .25em;
+	margin-bottom: 1.5em;
+	margin-top: .75em;
 }
 
 .detail {

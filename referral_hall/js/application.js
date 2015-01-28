@@ -53,14 +53,9 @@ $('#clear').click(function() {
 
 $('.summary').click(function() {
 	$(this).next().toggle();
+	//$(this).find('i').toggleClass('fa-caret-square-o-down fa-caret-up');
+	$(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 });
-
-
-// $( "#showr" ).click(function() {
-//   $( "div" ).first().show( "fast", function showNext() {
-//     $( this ).next( "div" ).show( "fast", showNext );
-//   });
-// });
 
 }
 
