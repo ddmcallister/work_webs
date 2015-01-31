@@ -11,8 +11,19 @@ function main() {
 		}
 	});
 
+	var tempArray = [];
 	$('.specialties').click(function() {
+		tempArray = [];
 		$(this).toggleClass('spec-select');
+		var highlighted = document.getElementsByClassName('spec-select');
+		console.log(highlighted);
+		$.each(highlighted, function(index, value) {
+			tempArray.push(value.id);
+	    });
+	    var prettify = tempArray.join(", ")
+		var tempconf = document.getElementById("clicked-reqs");
+		tempconf.innerHTML=prettify;
+		$('#clicked-reqs').next().show();
 	});
 
 	var reqArr = [];
@@ -38,6 +49,8 @@ function main() {
 		$('.specialties').removeClass('spec-select');
 		reqArr = [];
 		$('#quantity').val('');
+		$('#clicked-reqs').html('');
+		$('#num-line').toggle();
 		var testy = document.getElementById("spec-line");
 		console.log(testy);
 	});
@@ -53,8 +66,8 @@ $('#clear').click(function() {
 
 $('.summary').click(function() {
 	$(this).next().toggle();
-	//$(this).find('i').toggleClass('fa-caret-square-o-down fa-caret-up');
 	$(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+	$(this).next().addClass('.live');
 });
 
 }
