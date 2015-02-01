@@ -22,19 +22,24 @@ function main() {
 	    });
 	    var prettify = tempArray.join(", ")
 		var tempconf = document.getElementById("clicked-reqs");
-		tempconf.innerHTML=prettify;
+		tempconf.innerHTML="current specialties: " + prettify;
 		$('#clicked-reqs').next().show();
 	});
 
 	var reqArr = [];
-	$('#spec-line').val(' ');
 	$('#save').click(function() {
+		$('#spec-line').val(' ');
 	    var selected = document.getElementsByClassName("spec-select");
 	    var num = document.getElementById("quantity").value;
+	    if (num == 0) {
+	    	alert("Please select a number of workers");
+	    	return;
+	    }
+
 		$.each(selected, function(index, value) {
 			reqArr.push(value.id);
 	    });
-		var requestLine = "number: " + num + "; specialties: " + reqArr.join(", ");
+		var requestLine = "number of mechanics: " + num + "; specialties: " + reqArr.join(", ");
 
 		var newcontent = $('<textarea>').text(requestLine).addClass('confirmed');
 		console.log($(newcontent).val());

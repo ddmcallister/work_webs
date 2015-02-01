@@ -4,19 +4,22 @@
 	box-sizing: border-box;
 }
 
+html {
+	border-left: .75em solid #E6F99D;
+	min-height: 100%;
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0px;
-	border-left: .75em solid #E6F99D;
 }
 
-#tips-body {
-	padding-bottom: 2em;
+#tips-body, {
+	padding-bottom: em;
 	background: linear-gradient(to bottom, #abbaab, #ffffff);
+	background-size: 100% 75%;
+	background-repeat: no-repeat;
 }
-
-
 
 header {
 	background: -webkit-linear-gradient(left, #136a8a, #267871);
@@ -63,13 +66,6 @@ h1 {
 	font-size: 3.5em;
 	margin: 0;
 }
-
-/*#subhead {
-	font-weight: 200;
-	text-transform: none;
-	margin-top: 0px;
-	font-size: 3.25em;
-}*/
 
 #feedback-title, #tips-title, #instr-title, #subhead {
 	font-size: 3.25em;
@@ -172,11 +168,6 @@ h2.heading {
 	float: right;
 }
 
-.test {
-	cursor: text;
-	border: 2px solid #9FB1C1;	
-}
-
 input {
 	outline: none;
 	height: 60%;
@@ -189,6 +180,7 @@ input {
 
 .floatlabel {
 	position: absolute;
+	border: 0px;
 }
 
 label {

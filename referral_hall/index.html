@@ -25,17 +25,17 @@
 				<h2 class="heading">Company Info</h2>
 				<div class="left-col">
 					<div class="controls">
-						<input type="text" id="name" class="floatlabel" name="name" tabindex = "15">
+						<input type="text" id="name" class="floatlabel" name="name" tabindex = "15" required>
 						<label for="name">Contractor Name</label>
 					</div>
 					<div class="controls">
-						<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "25">
+						<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "25" required>
 						<label for="myname">My Name</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "20">
+						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "20" required>
 						<label for="phone">Phone</label>
 					</div>
 					<div class="controls">
@@ -52,32 +52,32 @@
 						<label for="site-name">Site Name</label>
 					</div>	
 					<div class="controls">
-						<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "45">
+						<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "45" required>
 						<label for="start-date">Start Date</label>
 					</div>	
 					<div class="controls">
-						<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "55">
+						<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "55" required>
 						<label for="contact">Contact/Foreman</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="text" id="address" class="floatlabel" name="address" tabindex = "40">
+						<input type="text" id="address" class="floatlabel" name="address" tabindex = "40" required>
 						<label for="address">Address</label>
 					</div>
 					<div class="controls">
-						<input type="text" id="time" class="floatlabel" name="time" tabindex = "50">
+						<input type="text" id="time" class="floatlabel" name="time" tabindex = "50" required>
 						<label for="time">Start Time</label>
 					</div>
 					<div class="controls">
-						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "60">
+						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "60" required>
 						<label for="job-phone">Job Phone</label>
 					</div>
 				</div>
 				<div class="controls">
 					<label for="job-length">Estimated Job Length</label>
-		 			<select name="job-length" id="job-length" class="select-style" tabindex = "70">
-						<option selected value="blank"></option>
+		 			<select name="job-length" id="job-length" class="select-style" tabindex = "70" required>
+						<option value disabled selected></option>
 						<option value="short-term">Short Term: <span>may last 12 business days or fewer</span></option>
 						<option value="standard">Standard: <span>may last more than 12 business days</span></option>
 					</select>
@@ -88,18 +88,17 @@
 				<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.
 				<div class="left-col">
 					<div id="spec-container" tabindex = "75">
+						<div class="specialties" id="field">Field Mechanic</div>
 			  			<div class="specialties" id="shop">Shop Mechanic</div>
-			  			<div class="specialties" id="field">Field Mechanic</div>
-			  			<div class="specialties" id="welding">Welder (uncertified)</div>
-			  			<div class="specialties" id="certified_welding">Certified Welder</div>
-			  			<div class="specialties" id="hand_sketching">Sketcher/hand</div>
-			  			<div class="specialties" id="cad_sketching">Sketcher/cad</div>
 			  			<div class="specialties" id="roofing">Roofer</div>
 			  			<div class="specialties" id="decking">Decker</div>
 			  			<div class="specialties" id="siding">Sider</div>
-			  			<div class="specialties" id="tab">Testing and Balancing</div>
 			  			<div class="specialties" id="enclosures">Enclosures</div>
-			  			<div class="specialties" id="fan_maintenance">Fan Maintenance</div>
+			  			<div class="specialties" id="louvers">Louvers</div>
+			  			<div class="specialties" id="tab">Testing and Balancing</div>
+			  			<div class="specialties" id="general_welding">Welder (uncertified)</div>
+			  			<div class="specialties" id="certified_welding">Certified Welder (specify type below)</div>
+			  			<div class="specialties" id="cad_sketching">Sketcher/CAD (specify type below)</div>
 			  		</div>
 			  		<div id="clicked-reqs"></div>
 			  		<div id= "num-line">
@@ -107,25 +106,25 @@
 			  			<input type="number" name="quantity" id="quantity" max="25" step="1" tabindex = "80">
 			  		</div>
 					<div id="save-line">
-						<div>Add This Request <span id="save" tabindex = "85"<i class="fa fa-plus"></i></span></div>
+						<div>Add To Your Request <span id="save" tabindex = "85"<i class="fa fa-plus"></i></span></div>
 					</div>
 				</div>
 				<div class="right-col">
 		   			<div id="request_one"><label for="request_one">You have requested ...</label></div>
 		   			<div id="clear-request">
-						<p>Clear Specialties Request <span id="clear" tabindex = "90"<i class="fa fa-undo"></i></span></p>
+						<p>Clear Your Request <span id="clear" tabindex = "90"<i class="fa fa-undo"></i></span></p>
 					</div>
 				</div>
 		  		<input type="hidden" name="spec-line" id="spec-line">
 		  	</div>
 			<div class="form-group">
-		    	<h2 class="heading">Additional Specialties, Comments or Special Instructions</h2>
+		    	<h2 class="heading">Additional Specialties, Certifications, Comments or Special Instructions</h2>
 		    	<div class="controls" id="comment-container">
 		      		<textarea name="comments" class="floatLabel" id="comments" tabindex = "95"></textarea>
 		      		<button id="submit" tabindex = "100">Submit</button>
 		      	</div>
 		      			<div id="pdf-line">
-			<p>Download a pdf of this form. <a href="./img/Contractor_Request_Form.pdf" download><span id="pdf"<i class="fa fa-file-pdf-o" tabindex = "105"></i></span></a></p>
+			<p>Download a pdf of this form <a href="./img/Contractor_Request_Form.pdf" download><span id="pdf"<i class="fa fa-file-pdf-o" tabindex = "105"></i></span></a></p>
 		</div>
 		    </div>
 		</form>
