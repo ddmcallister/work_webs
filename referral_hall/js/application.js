@@ -1,5 +1,7 @@
 function main() {
 
+	//$("form").prop('autocomplete', 'off');
+
 	$('.floatlabel').focus(function() {
 		$(this).addClass('test');
 		$(this).next().addClass('active');
@@ -16,7 +18,6 @@ function main() {
 		tempArray = [];
 		$(this).toggleClass('spec-select');
 		var highlighted = document.getElementsByClassName('spec-select');
-		console.log(highlighted);
 		$.each(highlighted, function(index, value) {
 			tempArray.push(value.id);
 	    });
