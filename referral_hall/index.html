@@ -36,7 +36,7 @@
 				<div class="right-col">
 					<div class="controls">
 						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "20" required>
-						<label for="phone">Phone</label>
+						<label for="phone">Office or Cell Phone</label>
 					</div>
 					<div class="controls">
 						<input type="email" id="email" class="floatlabel" name="email" tabindex = "30">
@@ -71,7 +71,7 @@
 					</div>
 					<div class="controls">
 						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "60" required>
-						<label for="job-phone">Job Phone</label>
+						<label for="job-phone">Contact Cell Phone</label>
 					</div>
 				</div>
 				<div class="controls">
@@ -85,7 +85,10 @@
 			</div>
 		 	<div class="form-group" id="space-correct">
 				<h2 class="heading">Workforce Info</h2>
-				<p>Please select a specialty or set of specialties and indicate the number of sheet metal workers needed. For additional workers with a new specialty or set of specialties, start a new line.
+				<div id="instr-container">
+					<p>Click to highlight your specialty requirements, then indicate how many workers you need.</p>
+					<p><span class="emph">You can use this form to make multiple requests. </span>For additional workers with different specialties, repeat the process. Your full request is displayed in the box labelled "You have requested...".</p>
+				</div>
 				<div class="left-col">
 					<div id="spec-container" tabindex = "75">
 						<div class="specialties" id="field">Field Mechanic</div>

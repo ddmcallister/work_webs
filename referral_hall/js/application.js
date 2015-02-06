@@ -23,7 +23,7 @@ function main() {
 	    });
 	    var prettify = tempArray.join(", ")
 		var tempconf = document.getElementById("clicked-reqs");
-		tempconf.innerHTML="current specialties: " + prettify;
+		tempconf.innerHTML="current selection: " + prettify;
 		$('#clicked-reqs').next().show();
 	});
 

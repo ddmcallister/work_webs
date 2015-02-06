@@ -201,9 +201,18 @@ label.active {
 	background-color: rgba(255,255,255,1);
 }
 
+#instr-container {
+	margin: 0 1em 2em 1em;
+	letter-spacing: 1px;
+}
+
 p {
 	color: #424242;
 	line-height: 1.5em;
+}
+
+.emph {
+	font-weight: 600;
 }
 
 #spec-container {
