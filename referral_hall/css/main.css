@@ -171,6 +171,7 @@ h2.heading {
 input {
 	outline: none;
 	height: 60%;
+	width: 85%;
 	font-size: 14px;
 	color: #353432;
 	-webkit-appearance: caret;

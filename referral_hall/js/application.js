@@ -3,7 +3,7 @@ function main() {
 	//$("form").prop('autocomplete', 'off');
 
 	$('.floatlabel').focus(function() {
-		$(this).addClass('test');
+		//$(this).addClass('test');
 		$(this).next().addClass('active');
 	});
 

@@ -28,26 +28,26 @@
 			<p class="header-sentnc secondary-pg">Let Us Know About Past Placements</p>
 		</header>
 	<div id="main">
-		<form method="post" action="mailto:destanie@gmail.com" enctype="text/plain">
+		<form method="post" action="mailto:destanie@gmail.com" enctype="text/plain" autocomplete="off">
 			<div class="form-group">
 				<h2 class="heading">Company Info</h2>
 				<div class="left-col">
 					<div class="controls">
-						<input type="text" id="feedbackname" class="floatlabel" name="feedbackname" tabindex = "1">
+						<input type="text" id="feedbackname" class="floatlabel" name="feedbackname" maxlength = "50" tabindex = "1">
 						<label for="feedbackname">Contractor Name</label>
 					</div>
 					<div class="controls">
-						<input type="tel" id="feedbackphone" class="floatlabel" name="feedbackphone" tabindex = "10">
-						<label for="feedbackphone">Phone</label>
+						<input type="tel" id="feedbackphone" class="floatlabel" name="feedbackphone" maxlength= "11" minlength="10" tabindex = "10">
+						<label for="feedbackphone">Office or Cell Phone</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="text" id="feedbackmyname" class="floatlabel" name="feedbackmyname" tabindex = "5">
+						<input type="text" id="feedbackmyname" class="floatlabel" name="feedbackmyname" maxlength="30" tabindex = "5">
 						<label for="feedbackmyname">My Name</label>
 					</div>
 					<div class="controls">
-						<input type="email" id="feedbackemail" class="floatlabel" name="feedbackemail" tabindex = "15">
+						<input type="email" id="feedbackemail" class="floatlabel" name="feedbackemail" maxlength = "40" tabindex = "15">
 						<label for="feedbackemail">Email</label>
 					</div>
 				</div>
@@ -56,18 +56,18 @@
 				<h2 class="heading">Placement Info</h2>
 				<div class="left-col">
 					<div class="controls">
-						<input type="text" id="feedbacksite" class="floatlabel" name="feedbacksite" tabindex = "20">
+						<input type="text" id="feedbacksite" class="floatlabel" name="feedbacksite" maxlength="50" tabindex = "20">
 						<label for="feedbacksite">Site Name or Address</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="text" id="feedbackstart-date" class="floatlabel" name="feedbackstart-date" tabindex = "25">
+						<input type="text" id="feedbackstart-date" class="floatlabel" name="feedbackstart-date" maxlength="15" tabindex = "25">
 						<label for="feedbackstart-date">Start Date</label>
 					</div>
 				</div>
 					<div class="controls">
-						<input type="text" id="feedbackplacedname" class="floatlabel" name="feedbackplacedname" tabindex = "30">
+						<input type="text" id="feedbackplacedname" class="floatlabel" name="feedbackplacedname" maxlength="50" tabindex = "30">
 						<label for="feedbackplacedname">Member(s) Placed</label>
 					</div>
 			</div>
@@ -79,6 +79,7 @@
 		      		<button id="submit" tabindex = "40">Submit</button>
 		      	</div>
 		    </div>
-		</div>
-	</body>
+		</form>
+	</div>
+</body>
 </html>

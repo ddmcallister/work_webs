@@ -25,21 +25,21 @@
 				<h2 class="heading">Company Info</h2>
 				<div class="left-col">
 					<div class="controls">
-						<input type="text" id="name" class="floatlabel" name="name" tabindex = "15" required>
+						<input type="text" id="name" class="floatlabel" name="name" tabindex = "15" maxlength = "50" required>
 						<label for="name">Contractor Name</label>
 					</div>
 					<div class="controls">
-						<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "25" required>
+						<input type="text" id="myname" class="floatlabel" name="myname" tabindex = "25" maxlength="30" required>
 						<label for="myname">My Name</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "20" required>
+						<input type="tel" id="phone" class="floatlabel" name="phone" tabindex = "20" maxlength= "11" minlength="10" required>
 						<label for="phone">Office or Cell Phone</label>
 					</div>
 					<div class="controls">
-						<input type="email" id="email" class="floatlabel" name="email" tabindex = "30">
+						<input type="email" id="email" class="floatlabel" name="email" tabindex = "30" maxlength = "40">
 						<label for="email">Email</label>
 					</div>
 				</div>
@@ -48,29 +48,29 @@
 				<h2 class="heading">Job Info</h2>
 				<div class="left-col">
 					<div class="controls">
-						<input type="text" id="site-name" class="floatlabel" name="site-name" tabindex = "35">
+						<input type="text" id="site-name" class="floatlabel" name="site-name" tabindex = "35" maxlength="50">
 						<label for="site-name">Site Name</label>
 					</div>	
 					<div class="controls">
-						<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "45" required>
+						<input type="text" id="start-date" class="floatlabel" name="start-date" tabindex = "45" maxlength="15" required>
 						<label for="start-date">Start Date</label>
 					</div>	
 					<div class="controls">
-						<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "55" required>
+						<input type="text" id="contact" class="floatlabel" name="contact" tabindex = "55" maxlength="30" required>
 						<label for="contact">Contact/Foreman</label>
 					</div>
 				</div>
 				<div class="right-col">
 					<div class="controls">
-						<input type="text" id="address" class="floatlabel" name="address" tabindex = "40" required>
+						<input type="text" id="address" class="floatlabel" name="address" tabindex = "40" maxlength="50" required>
 						<label for="address">Address</label>
 					</div>
 					<div class="controls">
-						<input type="text" id="time" class="floatlabel" name="time" tabindex = "50" required>
+						<input type="text" id="time" class="floatlabel" name="time" tabindex = "50" maxlength="15" required>
 						<label for="time">Start Time</label>
 					</div>
 					<div class="controls">
-						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "60" required>
+						<input type="tel" id="job-phone" class="floatlabel" name="job-phone" tabindex = "60" maxlength= "11" minlength="10" required>
 						<label for="job-phone">Contact Cell Phone</label>
 					</div>
 				</div>
@@ -86,7 +86,7 @@
 		 	<div class="form-group" id="space-correct">
 				<h2 class="heading">Workforce Info</h2>
 				<div id="instr-container">
-					<p>Click to highlight your specialty requirements, then indicate how many workers you need.</p>
+					<p>Click to highlight your specialty requirements, then indicate how many workers you need and click the add button.</p>
 					<p><span class="emph">You can use this form to make multiple requests. </span>For additional workers with different specialties, repeat the process. Your full request is displayed in the box labelled "You have requested...".</p>
 				</div>
 				<div class="left-col">
@@ -123,7 +123,7 @@
 			<div class="form-group">
 		    	<h2 class="heading">Additional Specialties, Certifications, Comments or Special Instructions</h2>
 		    	<div class="controls" id="comment-container">
-		      		<textarea name="comments" class="floatLabel" id="comments" tabindex = "95"></textarea>
+		      		<textarea name="comments" class="floatLabel" id="comments" tabindex = "95" maxlength="250"></textarea>
 		      		<button id="submit" tabindex = "100">Submit</button>
 		      	</div>
 		      			<div id="pdf-line">
