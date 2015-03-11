@@ -1,12 +1,9 @@
 body {
 	font-family: 'Lato', 'Geneva', sans-serif;
 	font-size: 18px;
+	font-weight: 300;
 	color: #506266;
 	margin: 0px 0px 3em 0px;
-}
-
-.main_header {
-	width: 100%;
 }
 
 img {
@@ -17,6 +14,22 @@ h1, h2, h3 {
 	font-family: 'Lato', 'Geneva', sans-serif;
 	font-weight: 300;
 	text-align: center;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+hr {
+	border: 0;
+	color: #D8D8D8;
+	background-color: #D8D8D8;
+	margin-left: 0;
+	height: 1px;
+	}
+
+.main_header {
+	width: 100%;
 }
 
 .main_nav {
@@ -44,4 +57,24 @@ h1, h2, h3 {
 
 .not_here {
 	border-bottom: 1px solid #7B8F8A;
+}
+
+.content {
+	margin: 2em;
+}
+
+.vertical {
+	width: 2px;
+	color: #D8D8D8;
+  	background-color: #D8D8D8;
+	height: 1em;
+ 	margin: 0px;
+  	border: 0px;
+	display: inline-block;
+	vertical-align: -20%;
+	}
+
+.contact_info {
+	margin: 2em 0 3em 0;
+	text-align: center;
 }
