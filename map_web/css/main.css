@@ -1,0 +1,47 @@
+body {
+	font-family: 'Lato', 'Geneva', sans-serif;
+	font-size: 18px;
+	color: #506266;
+	margin: 0px 0px 3em 0px;
+}
+
+.main_header {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: 'Lato', 'Geneva', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.main_nav {
+	text-align: center;
+}
+
+.main_nav a {
+	padding-bottom: .1em;  
+	padding-left: 0;
+	margin-right: .75em;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.faded {
+	color: #7B8F8A;
+}
+
+.here {
+	color: #00B4CC;
+	border-bottom: none;
+	cursor: text;
+}
+
+.not_here {
+	border-bottom: 1px solid #7B8F8A;
+}
