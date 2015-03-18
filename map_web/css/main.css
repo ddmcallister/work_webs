@@ -51,7 +51,6 @@ p {
 
 #about_header {
 	background-image: url("../img/squareduct_onjob_cr.jpg");
-	-webkit-filter: contrast(1.5) brightness(1.25);
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -73,7 +72,7 @@ p {
 }
 
 .map_backdrop {
-	background: -webkit-linear-gradient(black, gray);
+	background: -webkit-linear-gradient(#575A65, gray);
 
 	width: 35%;
 	margin: 12em 0px 0px 1.25em;
@@ -88,10 +87,6 @@ p {
 
 #annc_header .map_backdrop {
 	-webkit-filter: contrast(1);
-}
-
-#about_header .map_backdrop {
-	-webkit-filter: contrast(1) brightness(1);
 }
 
 .main_nav {
@@ -144,6 +139,12 @@ p {
 	display: inline-block;
 	vertical-align: -20%;
 	}
+
+#index_hr {
+color: #00B4CC;
+background-color: #00B4CC;
+
+}
 
 .contact_info {
 	margin: 2em 0 3em 0;
