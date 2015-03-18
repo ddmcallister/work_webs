@@ -1,27 +1,31 @@
 body {
-	font-family: 'Lato', 'Geneva', sans-serif;
 	font-size: 18px;
-	font-weight: 300;
-	color: #506266;
 	margin: 0px 0px 3em 0px;
 }
 
-img {
-	width: 100%;
+body, h1, h2, h3 {
+	font-family: 'Lato', 'Geneva', sans-serif;
+	font-weight: 300;	
 }
 
-h1, h2, h3 {
-	font-family: 'Lato', 'Geneva', sans-serif;
-	font-weight: 300;
-	text-align: center;
+body, #contact_index {
+	color: #506266;
 }
 
 h1 {
 	color: white;
 }
 
+h1, h2, h3 {
+	text-align: center;
+}
+
 li {
 	margin-bottom: 1em;
+}
+
+p {
+	line-height: 1.75em;
 }
 
 hr {
@@ -32,61 +36,21 @@ hr {
 	height: 1px;
 }
 
-p {
-	line-height: 1.75em;
-}
-
 .main_header {
 	width: 100%;
 	height: 25em;
 }
 
-#index_header {
-	background-image: url("../img/square_duct_cr_short.jpg");
-	-webkit-filter: contrast(2);
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
-#about_header {
-	background-image: url("../img/squareduct_onjob_cr.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
-#svcs_header {
-	background-image: url("../img/arm_type_supports_cr.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
-#annc_header {
-	background-image: url("../img/sheet_metal.jpg");
-	-webkit-filter: contrast(1.5);
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow: hidden;
-}
-
 .map_backdrop {
 	background: -webkit-linear-gradient(#575A65, gray);
-
+	background: -moz-linear-gradient(#575A65, gray);
+	background: -o-linear-gradient(#575A65, gray);
+	background: linear-gradient(#575A65, gray);
 	width: 35%;
 	margin: 12em 0px 0px 1.25em;
 	color: #00B4CC;
 	padding: 0.5em;
 	line-height: 0.75;
-}
-
-#svcs_header .map_backdrop {
-	-webkit-filter: contrast(2);
-}
-
-#annc_header .map_backdrop {
-	-webkit-filter: contrast(1);
 }
 
 .main_nav {
@@ -118,7 +82,7 @@ p {
 }
 
 .not_here {
-	border-bottom: 1px solid #7B8F8A;
+	border-bottom: 1px solid #D8D8D8;;
 }
 
 .content {
@@ -126,7 +90,7 @@ p {
 }
 
 .content h3 {
-	color: black;
+	color: #484848;
 }
 
 .vertical {
@@ -138,12 +102,6 @@ p {
   	border: 0px;
 	display: inline-block;
 	vertical-align: -20%;
-	}
-
-#index_hr {
-color: #00B4CC;
-background-color: #00B4CC;
-
 }
 
 .contact_info {
@@ -152,6 +110,43 @@ background-color: #00B4CC;
 	color:#00B4CC;
 }
 
-#contact_index {
-	color: #506266;
+#index_header, #about_header, #svcs_header, #annc_header {
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;	
+}
+
+#index_header {
+	background-image: url("../img/square_duct_cr_short.jpg");
+	-webkit-filter: contrast(2);
+	filter: contrast(2);
+}
+
+#about_header {
+	background-image: url("../img/squareduct_onjob_cr.jpg");
+}
+
+#svcs_header {
+	background-image: url("../img/arm_type_supports_cr.jpg");
+}
+
+#annc_header {
+	background-image: url("../img/sheet_metal.jpg");
+	-webkit-filter: contrast(1.5);
+	filter: contrast(1.5);
+}
+
+#svcs_header .map_backdrop {
+	-webkit-filter: contrast(2);
+	filter: contrast(2);
+}
+
+#annc_header .map_backdrop {
+	-webkit-filter: contrast(1);
+	filter: contrast(1);
+}
+
+#index_hr {
+	color: #00B4CC;
+	background-color: #00B4CC;
 }
