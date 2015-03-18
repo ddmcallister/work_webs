@@ -16,6 +16,10 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+h1 {
+	color: white;
+}
+
 li {
 	margin-bottom: 1em;
 }
@@ -26,13 +30,72 @@ hr {
 	background-color: #D8D8D8;
 	margin-left: 0;
 	height: 1px;
-	}
+}
+
+p {
+	line-height: 1.75em;
+}
 
 .main_header {
 	width: 100%;
+	height: 25em;
+}
+
+#index_header {
+	background-image: url("../img/square_duct_cr_short.jpg");
+	-webkit-filter: contrast(2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#about_header {
+	background-image: url("../img/squareduct_onjob_cr.jpg");
+	-webkit-filter: contrast(1.5) brightness(1.25);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#svcs_header {
+	background-image: url("../img/arm_type_supports_cr.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#annc_header {
+	background-image: url("../img/sheet_metal.jpg");
+	-webkit-filter: contrast(1.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.map_backdrop {
+	background: -webkit-linear-gradient(black, gray);
+
+	width: 35%;
+	margin: 12em 0px 0px 1.25em;
+	color: #00B4CC;
+	padding: 0.5em;
+	line-height: 0.75;
+}
+
+#svcs_header .map_backdrop {
+	-webkit-filter: contrast(2);
+}
+
+#annc_header .map_backdrop {
+	-webkit-filter: contrast(1);
+}
+
+#about_header .map_backdrop {
+	-webkit-filter: contrast(1) brightness(1);
 }
 
 .main_nav {
+	margin-top: 2em;
 	text-align: center;
 }
 
@@ -43,6 +106,10 @@ hr {
 	font-size: 1.3em;
 	text-decoration: none;
 	font-weight: 200;
+}
+
+.blue {
+	color:#00B4CC;	
 }
 
 .faded {
@@ -60,7 +127,11 @@ hr {
 }
 
 .content {
-	margin: 2em;
+	margin: 2.5em 4em 4em 4em;
+}
+
+.content h3 {
+	color: black;
 }
 
 .vertical {
@@ -77,4 +148,9 @@ hr {
 .contact_info {
 	margin: 2em 0 3em 0;
 	text-align: center;
+	color:#00B4CC;
+}
+
+#contact_index {
+	color: #506266;
 }
