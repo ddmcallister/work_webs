@@ -3,7 +3,7 @@ body {
 	margin: 0px 0px 3em 0px;
 }
 
-body, h1, h2, h3 {
+body, h1, h2, h3, h4 {
 	font-family: 'Lato', 'Geneva', sans-serif;
 	font-weight: 300;	
 }
@@ -16,7 +16,7 @@ h1 {
 	color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
 }
 
@@ -26,6 +26,11 @@ li {
 
 p {
 	line-height: 1.75em;
+}
+
+input, #submit_butn {
+	display: block;
+	margin: .5em 0 .5em 0;
 }
 
 hr {
@@ -50,7 +55,7 @@ hr {
 	margin: 12em 0px 0px 1.25em;
 	color: #00B4CC;
 	padding: 0.5em;
-	line-height: 0.75;
+	line-height: 1;
 }
 
 .main_nav {
@@ -110,7 +115,7 @@ hr {
 	color:#00B4CC;
 }
 
-#index_header, #about_header, #svcs_header, #annc_header {
+#index_header, #about_header, #svcs_header, #annc_header, #contact_header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;	
@@ -136,6 +141,10 @@ hr {
 	filter: contrast(1.5);
 }
 
+#contact_header {
+	background-image: url("../img/copper.jpg");
+}
+
 #svcs_header .map_backdrop {
 	-webkit-filter: contrast(2);
 	filter: contrast(2);
@@ -149,4 +158,43 @@ hr {
 #index_hr {
 	color: #00B4CC;
 	background-color: #00B4CC;
+	width: 1px;
+}
+
+#contact {
+	margin: 2.5em 4em 1em 4em;
+}
+
+#txt-hdr {
+	text-align: left;
+}
+
+
+@media (max-width: 365px) {
+
+	.map_backdrop {
+		background: -webkit-linear-gradient(#575A65, gray);
+		background: -moz-linear-gradient(#575A65, gray);
+		background: -o-linear-gradient(#575A65, gray);
+		background: linear-gradient(#575A65, gray);
+		width: auto;
+		margin: 5%;
+		color: #00B4CC;
+		padding: 0.5em;
+		line-height: 1;
+	}
+
+	.main_nav {
+		margin-top: 1em;
+		text-align: center;
+	}
+
+	.main_nav a {
+		padding-bottom: .1em;  
+/*		padding-left: 1em;*/
+		margin-right: 1em;
+		font-size: 1.3em;
+		text-decoration: none;
+		font-weight: 200;
+	}
 }
