@@ -1,0 +1,69 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #f4f3ee;
+}
+
+body, p {
+	margin: 0;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    margin-top: 4em;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+}
+
+.ad_notice_wr {
+	height: 2em;
+	background-color: #333333
+	;
+}
+
+.ad_notice {
+	margin: 0;
+	font: 1em "Actor", sans-serif;
+	color: #909090;
+	text-transform: uppercase;
+	margin-left: .5em;
+	padding: .5em;
+}
+
+.phone {
+	font: 1.75em "Volkorn", Times, serif;
+	text-align: right;
+	font-weight: 600;
+	padding: 1em;
+	color: #333333;
+}
+
+.logo {
+	margin: .5em;
+	display: inline-block;
+  	margin-top: -1em;
+}
+
+.logo_img {
+	width: 150%;
+}
+
+.top_nav_wr {
+	text-align: right;
+	margin-top: -4em;
+}
+
+.top_nav_wr a {
+	color: #B8944D;
+	font: .9em "Cabin", Arial, sans-serif;
+	font-weight: lighter;
+	padding-right: .65em;
+	text-decoration: none;
+}
