@@ -9,6 +9,7 @@ html, body {
 	height: 100%;
 }
 
+
 body {
 	font-family: 'Lato', 'Geneva', sans-serif;
 }
@@ -88,7 +89,7 @@ body {
 
 
 
-.bmenu {
+/*.bmenu {
 	padding: 0px;
 	margin: 0 0 10px 0;
 	position: relative;
@@ -107,7 +108,7 @@ body {
 	text-decoration: none;
 	display: block;
 	text-transform: uppercase;
-/*	text-shadow: 0px 0px 4px #83362c;*/
+	text-shadow: 0px 0px 4px #83362c;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -117,14 +118,14 @@ body {
 }
 
 .bmenu:hover li a{
-/*	text-shadow: 0px 0px 6px #83362c;*/
+	text-shadow: 0px 0px 6px #83362c;
 }
 
 .bmenu li a:hover{
 	color: #83362c;
-/*	text-shadow: 0px 0px 1px #83362c;*/
+	text-shadow: 0px 0px 1px #83362c;
 	padding-left: 10px;
-}
+}*/
 
 .contact {
 	position: relative;
@@ -140,18 +141,19 @@ body {
 	font-size: 4em;
 	color: #FFDB58;
 	position: relative;
+	display: flex;
 }
 
 #employer_index {
-	margin-left: 6em;
+	margin-left: 5em;
 }
 
 #employee_index {
-	margin-left: 8em;
+	margin-left: 7em;
 }
 
 #left_side_bar {
-	position: absolute;
+	position: fixed;
 	width: 8em;
 	height: 60em;
 	margin-top: -34.4em;
@@ -163,24 +165,18 @@ body {
 	z-index: 0;
 }
 
-/*.page-wrap:after {
-  content: "";
-  display: block;
+#all_pas {
+	flex-direction: row;
 }
 
-.footer, .page_wrap:after {
-  height: 5em; 
-}*/
-
-.footer {
-	width: 100%;
-/*	background-color: #612821;*/
-
-background: -webkit-linear-gradient(#9a4034, #612821); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#9a4034, #612821); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#9a4034, #612821); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#9a4034, #612821); /* Standard syntax */
+.pa {
+	color: #FFDB58;
+	text-transform: uppercase;
+	font-size: .25em;
+	font-family: "Lato", sans-serif;
+	list-style-type: none;
 }
 
-
+.invis {
+	display: none;
 }
