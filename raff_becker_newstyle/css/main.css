@@ -15,7 +15,7 @@ body {
 
 .page_wrap {
 	min-height: 100%;
-	margin-bottom: -5em;
+/*	margin-bottom: -5em;*/
 }
 
 #home_pg {
@@ -45,6 +45,9 @@ body {
 	width: 100%;
 	background-color: rgba(255, 255, 255, .75);
 	margin-top: 2em;
+	z-index: 1;
+	position: relative;
+	margin-bottom: 14em;
 }
 
 .logo {
@@ -132,14 +135,42 @@ body {
 	margin-left: 85%;
 }
 
-.page-wrap:after {
+.client_type {
+	font-family: 'Calligraffitti', cursive;
+	font-size: 4em;
+	color: #FFDB58;
+	position: relative;
+}
+
+#employer_index {
+	margin-left: 6em;
+}
+
+#employee_index {
+	margin-left: 8em;
+}
+
+#left_side_bar {
+	position: absolute;
+	width: 8em;
+	height: 60em;
+	margin-top: -34.4em;
+	margin-left: 76%;
+	background: -webkit-linear-gradient(left, #9a4034, #612821);
+	background: -o-linear-gradient(right, #9a4034, #612821);
+	background: -moz-linear-gradient(right, #9a4034, #612821);
+	background: linear-gradient(right, #9a4034, #612821);
+	z-index: 0;
+}
+
+/*.page-wrap:after {
   content: "";
   display: block;
 }
 
 .footer, .page_wrap:after {
   height: 5em; 
-}
+}*/
 
 .footer {
 	width: 100%;
