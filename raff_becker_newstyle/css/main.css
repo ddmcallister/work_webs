@@ -2,10 +2,20 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+	height: 100%;
 }
 
 body {
-	margin: 0;
+	font-family: 'Lato', 'Geneva', sans-serif;
+}
+
+.page_wrap {
+	min-height: 100%;
+	margin-bottom: -5em;
 }
 
 #home_pg {
@@ -32,7 +42,7 @@ body {
 }
 
 .header {
-	width: 75%;
+	width: 100%;
 	background-color: rgba(255, 255, 255, .75);
 	margin-top: 2em;
 }
@@ -55,7 +65,7 @@ body {
 	display: inline-block;
 	font-family: Times, serif;
 	font-size: 2em;
-	margin: 1.25em .5em 0;
+	margin: 1.5em .5em 0;
 }
 
 .matters {
@@ -66,23 +76,24 @@ body {
   width: 20%;
   background-color: rgba(255, 255, 255, .75);
   margin-top: -6em;
-  height: 35em;
+  height: 30em;
   float: right;
   display: inline-block;
   margin-right: 1em;
+  position: relative;
 }
 
 
 
 .bmenu {
-    padding: 0px;
-    margin: 0 0 10px 0;
-    position: relative;
-        list-style-type: square;
+	padding: 0px;
+	margin: 0 0 10px 0;
+	position: relative;
+	list-style-type: square;
 
 }
 .bmenu li{
-	font-size: 2em;
+	font-size: 1.5em;
 	display: block;
 	line-height: 2em;
 	margin-left: 1em;
@@ -93,7 +104,7 @@ body {
 	text-decoration: none;
 	display: block;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px #83362c;
+/*	text-shadow: 0px 0px 4px #83362c;*/
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -103,10 +114,42 @@ body {
 }
 
 .bmenu:hover li a{
-	text-shadow: 0px 0px 6px #83362c;
+/*	text-shadow: 0px 0px 6px #83362c;*/
 }
+
 .bmenu li a:hover{
 	color: #83362c;
-	text-shadow: 0px 0px 1px #83362c;
+/*	text-shadow: 0px 0px 1px #83362c;*/
 	padding-left: 10px;
+}
+
+.contact {
+	position: relative;
+	font-family: "Lato", sans-serif;
+	font-size: .75em;
+	margin: .5em;
+	color: #ccb261;
+	margin-left: 85%;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page_wrap:after {
+  height: 5em; 
+}
+
+.footer {
+	width: 100%;
+/*	background-color: #612821;*/
+
+background: -webkit-linear-gradient(#9a4034, #612821); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#9a4034, #612821); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#9a4034, #612821); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#9a4034, #612821); /* Standard syntax */
+}
+
+
 }
