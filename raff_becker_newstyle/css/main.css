@@ -1,0 +1,112 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+#home_pg {
+	background-image: url("../img/New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.ad_notice_wr {
+	height: 2em;
+	background-color: #333333;
+}
+
+.ad_notice {
+	margin: 0;
+	font: .8em "Actor", sans-serif;
+	color: #909090;
+	text-transform: uppercase;
+	margin-left: .5em;
+	padding: .6em;
+}
+
+.header {
+	width: 75%;
+	background-color: rgba(255, 255, 255, .75);
+	margin-top: 2em;
+}
+
+.logo {
+	margin: .5em;
+	display: inline-block;
+	
+}
+
+.logo_img {
+	width: 125%;
+	opacity: 1;
+	margin-left: 1em;
+}
+
+.experience {
+	color: #83362c;
+	float: right;
+	display: inline-block;
+	font-family: Times, serif;
+	font-size: 2em;
+	margin: 1.25em .5em 0;
+}
+
+.matters {
+	font-style: oblique;
+}
+
+.side_nav {
+  width: 20%;
+  background-color: rgba(255, 255, 255, .75);
+  margin-top: -6em;
+  height: 35em;
+  float: right;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+
+
+.bmenu {
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+        list-style-type: square;
+
+}
+.bmenu li{
+	font-size: 2em;
+	display: block;
+	line-height: 2em;
+	margin-left: 1em;
+}
+
+.bmenu li a{
+	color: #83362c;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px #83362c;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.bmenu:hover li a{
+	text-shadow: 0px 0px 6px #83362c;
+}
+.bmenu li a:hover{
+	color: #83362c;
+	text-shadow: 0px 0px 1px #83362c;
+	padding-left: 10px;
+}

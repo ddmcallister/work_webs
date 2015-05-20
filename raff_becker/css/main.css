@@ -30,11 +30,11 @@ hr {
 
 .ad_notice {
 	margin: 0;
-	font: 1em "Actor", sans-serif;
+	font: .8em "Actor", sans-serif;
 	color: #909090;
 	text-transform: uppercase;
 	margin-left: .5em;
-	padding: .5em;
+	padding: .6em;
 }
 
 .phone {
@@ -48,7 +48,7 @@ hr {
 .logo {
 	margin: .5em;
 	display: inline-block;
-  	margin-top: -1em;
+	margin-top: -1em;
 }
 
 .logo_img {
@@ -57,13 +57,25 @@ hr {
 
 .top_nav_wr {
 	text-align: right;
-	margin-top: -4em;
+	margin-top: -1em;
+	padding-right: 1em;
 }
 
 .top_nav_wr a {
-	color: #B8944D;
+	color: #ccb261;
 	font: .9em "Cabin", Arial, sans-serif;
 	font-weight: lighter;
 	padding-right: .65em;
 	text-decoration: none;
+}
+
+.top_nav_wr a:visited {
+	color: #83362c;
+}
+
+
+.page_img {
+	width: 100%;
+	background-size: cover;
+	margin-top: 2em;
 }
