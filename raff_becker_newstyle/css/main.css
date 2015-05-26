@@ -12,6 +12,17 @@ html, body {
 
 body {
 	font-family: 'Lato', 'Geneva', sans-serif;
+	background-color: #f4f3ee;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    margin-top: 3em;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
 }
 
 .page_wrap {
@@ -52,15 +63,40 @@ body {
 }
 
 .logo {
-	margin: .5em;
+	margin: 0 .5em 1em;
 	display: inline-block;
-	
 }
 
 .logo_img {
 	width: 125%;
 	opacity: 1;
 	margin-left: 1em;
+}
+
+.phone {
+	font: 1.75em "Volkorn", Times, serif;
+	text-align: right;
+	font-weight: 600;
+	padding: 1em 1em 0;
+	color: #333333;
+}
+
+.top_nav_wr {
+	text-align: right;
+	margin-top: -1em;
+	padding-right: 1em;
+}
+
+.top_nav_wr a {
+	color: #ccb261;
+	font: .9em "Cabin", Arial, sans-serif;
+	font-weight: lighter;
+	padding-right: .65em;
+	text-decoration: none;
+}
+
+.top_nav_wr a:visited {
+	color: #83362c;
 }
 
 .experience {
@@ -86,6 +122,27 @@ body {
   margin-right: 1em;
   position: relative;
 }
+
+.pic_area {
+background-color: palegoldenrod;
+
+
+}
+
+.page_img {
+	height: 20em;
+	background-image: url("../img/family2.jpg");
+	box-shadow: 0 0 6em 6em palegoldenrod inset;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*#fmla_img {
+  	display: block;
+    margin: 0 auto;
+}*/
+
+
 
 
 
