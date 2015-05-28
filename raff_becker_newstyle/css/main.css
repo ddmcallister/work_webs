@@ -25,6 +25,20 @@ hr {
     background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
 }
 
+.ee_side_nav > h2 {
+	color: #83362c;
+}
+
+.ee_side_nav >ul {
+	list-style-type: none;
+	list-style-position: outside;
+
+}
+
+.arr_bul {
+	color: #ccb261;
+
+}
 .page_wrap {
 	min-height: 100%;
 /*	margin-bottom: -5em;*/
@@ -68,7 +82,13 @@ hr {
 }
 
 .logo_img {
-	width: 125%;
+	width: 35em;
+	opacity: 1;
+	margin-left: 1em;
+}
+
+.logo_img_small {
+	width: 20em;
 	opacity: 1;
 	margin-left: 1em;
 }
@@ -123,28 +143,23 @@ hr {
   position: relative;
 }
 
-.pic_area {
-background-color: palegoldenrod;
-
-
-}
-
-.page_img {
-	height: 20em;
-	background-image: url("../img/family2.jpg");
-	box-shadow: 0 0 6em 6em palegoldenrod inset;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-/*#fmla_img {
-  	display: block;
-    margin: 0 auto;
+/*.pic_area {
+	    box-shadow: inset 0 0 100px #EEE8AA;
 }*/
 
+.page_img {
 
+  /*background: radial-gradient(rgba(0,0,0,0), rgba(238,232,170, 1)), url("../img/family2.jpg");*/
+/*  background-repeat: no-repeat;
+  background-position: center;*/
+}
 
+#fmla_img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 
+}
 
 /*.bmenu {
 	padding: 0px;
