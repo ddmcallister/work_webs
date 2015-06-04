@@ -1,5 +1,9 @@
 function main() {
 
+checkSize();
+
+$(window).resize(checkSize);
+
 	$('#employer_index').hover(
 		function() {
 			$('#employer_pa').removeClass('invis');
@@ -18,7 +22,7 @@ function main() {
 		buttonHeight: '50px',
 		linkSelector: 'a',
 		linkText: function($a){ return $a.text() },
-		fixed: true, // set to true if the burger menu has to follow the window scroll
+		fixed: false,
 		hideInitialNav: true,
 		animateSpeed: 0,
 		hideOnBodyClick: true,
@@ -30,6 +34,20 @@ function main() {
     });
 
 
+
 }
 
 $(document).ready(main);
+
+
+
+function checkSize() {
+    if ($(".right-c").css("text-align") == "center") {
+    	$('.right-col').insertBefore('.left-col');
+    	console.log("hey hey");
+    }
+}
+
+
+
+

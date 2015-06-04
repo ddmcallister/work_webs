@@ -25,6 +25,13 @@ hr {
     background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
 }
 
+p {
+font-size: 1em;
+  color: #4E4D4A;
+  line-height: 1.5em;
+  margin-top: 1.75em;
+}
+
 
 
 .ee_side_nav > h2 {
@@ -53,6 +60,12 @@ hr {
 	font-weight: 600;
 }
 
+.ee_txt_header {
+	color: #83362c;
+	font: 1.75em "Volkorn", Times, serif;
+	font-weight: 600;
+}
+
 
 
 .small-side-nav > ul {
@@ -76,13 +89,15 @@ hr {
 .arr_bul {
 	color: #ccb261;
 	margin-right: 1em;
-
 }
 
+.body-wrap {
+	position: relative;
+}
 
 .left-col {
 	margin: 1em;
-	max-width: 20%;
+	max-width: 25%;
 	display: inline-block;
 }
 
