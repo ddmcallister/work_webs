@@ -27,7 +27,7 @@ hr {
 
 p {
 font-size: 1em;
-  color: #4E4D4A;
+
   line-height: 1.5em;
   margin-top: 1.75em;
 }
@@ -64,6 +64,10 @@ font-size: 1em;
 	color: #83362c;
 	font: 1.75em "Volkorn", Times, serif;
 	font-weight: 600;
+}
+
+.ee_pg_txt {
+	  color: #4E4D4A;
 }
 
 
@@ -265,9 +269,7 @@ font-size: 1em;
 	z-index: 0;
 }
 
-#all_pas {
-	flex-direction: row;
-}
+
 
 .pa {
 	color: #FFDB58;
@@ -280,6 +282,16 @@ font-size: 1em;
 .invis {
 	display: none;
 }
+
+#home_pg {
+	background-image: url("../img/New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 
 @media (max-width: 640px) {
 
