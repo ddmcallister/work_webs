@@ -1,9 +1,9 @@
 function main() {
 
-	//$("form").prop('autocomplete', 'off');
+
+	$("form").prop('autocomplete', 'off');
 
 	$('.floatlabel').focus(function() {
-		//$(this).addClass('test');
 		$(this).next().addClass('active');
 	});
 
@@ -43,7 +43,7 @@ function main() {
 		var requestLine = "number of mechanics: " + num + "; specialties: " + reqArr.join(", ");
 
 		var newcontent = $('<textarea>').text(requestLine).addClass('confirmed');
-		console.log($(newcontent).val());
+		//console.log($(newcontent).val());
 
 		if ($('#spec-line').val() == ' ') {
 			$('#spec-line').val(newcontent.val());
@@ -58,15 +58,15 @@ function main() {
 		$('#clicked-reqs').html('');
 		$('#num-line').toggle();
 		var testy = document.getElementById("spec-line");
-		console.log(testy);
+		//console.log(testy);
 	});
 
 $('#clear').click(function() { 
 	$('.confirmed').remove();
 	$('#spec-line').val(' ');
-	console.log("doing something");
+	//console.log("doing something");
 	var testy = document.getElementById("spec-line");
-	console.log(testy);
+	//console.log(testy);
 
 }); 
 
@@ -75,6 +75,19 @@ $('.summary').click(function() {
 	$(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	$(this).next().addClass('.live');
 });
+
+	$('#contr_form')
+	   .validate({
+         submitHandler: function(form) {
+           $(form).ajaxSubmit({
+                success: function() {
+                    $('#contr_form').hide();
+                    $('#page-wrap').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+                }
+           });
+         }
+    }); 
+
 
 }
 

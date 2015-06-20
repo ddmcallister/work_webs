@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 1.5em;
+	background: #f6efe5;
+	background-size: 60%;
+}
+
+.intro header {
+	position: relative;
+	background: #540202;
+	overflow: hidden;
+	width: 40%;
+	float: left;
+	/*if keeping transition, add prefixes for other browsers*/
+	transition: all 0.4s ease;
+}
+
+.intro header h1 {
+	position: absolute;
+	font-size: 125%;
+	color: #ffffff;
+	line-height: 2em;
+	top: 2.5em;
+  	left: .5em;
+	width: auto;
+	padding: .5em;
+	/*add more prefixes*/
+	webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.intro header h2 {
+	position: relative;
+	background: #991212;
+/*	background-size: 101%;*/
+	background-size: 60%;
+	display: block;
+	float: right;
+	font-size: 250%;
+	color: #ffffff;
+	line-height: 1.25em;
+	width: 50%;
+	height: 20em;
+	padding: 6em 0.5em 0 0.5em;
+	box-sizing: border-box;
+}
+
+.intro header h3 {
+	position: relative;
+	background: #991212;
+	background-size: 60%;
+	display: block;
+	float: right;
+  	padding: 28em 0 0 0;
+  	font-size: 150%;
+}
+
+.intro .summary p {
+  padding: 40% 2em 0;
+  margin: 0;
+ }
+
+.intro .summary {
+	font-size: 100%;
+	color: #000000;
+	width: 60%;
+	float: left;
+	background: url("../img/New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg") no-repeat left top;
+	background-size: 101%;
+	height: 50em;
+	margin: 0;
+	padding: 16.3em 2em 10em 2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ital {
+	font-style: oblique;
+}
+
+.logo {
+	font-family: 'Average', serif;
+	font-size: 100%;
+	color: #F44336;
+	margin: 2em 0 0 0;
+	letter-spacing: -.3em;
+	display: block;
+}
+
+.logo .amp {
+	font-family: "Average", Georgia, serif;
+	font-size: 150%;
+	font-weight: normal;
+	color: #FFC107;
+}
+
+.logo #l-r {
+	vertical-align: 0.4em;
+  	font-size: 120%;
+}
+
+.logo #l-b {
+	vertical-align: -0.4em;
+  	font-size: 120%;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+}

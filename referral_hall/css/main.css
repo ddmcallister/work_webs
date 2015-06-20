@@ -381,5 +381,64 @@ button:hover {
 .instructions-links:hover {
 	color: #94BA65;
 	text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+
+	header {
+		text-align: center;
+	}
+
+	.top-nav {
+		float: right;
+		margin-top: -2em;
+		text-align: center;
+		margin-right: 0em; 
+	}
+
+	#instr-container {
+	margin: 0 1em 2em 1.75em;
+	letter-spacing: 1px;
+}
+
+	.right-col {
+		width: 100%;
+		margin: 1.5em;
+		float: none;
+	}
+
+	.left-col {
+		width: 100%;
+		margin: 1.5em;
+	}
+
+	.controls {
+		-webkit-box-shadow: 5px 5px 1px #888888;
+		-moz-box-shadow: 5px 5px 1px #888888;
+		box-shadow: 5px 5px 1px #888888;
+	}
+
+	#space-correct {
+		margin-top: 3em;
+  		margin-bottom: -3em;
+	}
+
+	h2.heading {
+		padding-left: 1.25em;
+	}
+
+	#comment-container {
+		width: 100%;
+		margin: 1.5em;
+	}
+
+    #job-lenght-wrap {
+    	width: 100%;
+		margin: 1.5em;
+    }
+
+	#job-length {
+		width: 100%;
+	}
 
 }
