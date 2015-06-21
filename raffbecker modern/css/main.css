@@ -2,17 +2,33 @@
 	margin: 0;
 }
 
+a {
+/*	color: #ffffff;*/
+	text-decoration: none;
+	cursor: pointer;
+	color: #FF8C16;
+}
+
 body {
 	font-family: "Lato", Arial, sans-serif;
 	line-height: 1.5em;
-	background-color: rgba(61, 54, 46, .75);
+	background-color: #ffffff;
 	background-size: 60%;
+}
+
+.contact-line {
+	display: inline block;
 }
 
 .intro header {
 	position: relative;
 /*	background: #540202;*/
-	background: #A3662C;
+/*	background: #A3662C;*/
+	background: #3B1105;
+	/*background-image: -webkit-linear-gradient(left, rgba(184,148,77,.25), rgba(184,148,77,.75), rgba(184,148,77,.25));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));*/
 	overflow: hidden;
 	width: 30%;
 	float: left;
@@ -30,7 +46,8 @@ body {
 	width: auto;
 	padding: .5em;
 	/*add more prefixes*/
-	webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
 
@@ -52,21 +69,35 @@ body {
 
 .intro header h2 {
 	position: relative;
-	background: #991212;
+	background: #BD330C;
 	display: block;
 	float: right;
-	font-size: 250%;
+	font-size: 150%;
 	color: #ffffff;
 	line-height: 1.25em;
 	width: 70%;
-	height: 20em;
-	padding: 6em 0.5em 0 0.5em;
+	padding: 5em 0.5em 0 0.5em;
 	box-sizing: border-box;
+}
+
+.intro header h2:nth-child(5) {
+	padding: 5em 0.5em 0 0.5em;
+	font-size: 225%;
+}
+
+.intro header h2:last-child {
+	padding: 3em 0.5em 0 0.5em;
+	font-size: 150%;
+	height: 15em;
+}
+
+.intro header h2 .ital {
+	font-style: oblique;
 }
 
 .intro .summary {
 	font-size: 100%;
-	color: #ffffff;
+  color: #1F1F1F;
 	width: 70%;
 	float: left;
 	background: url("../img/75_New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg") no-repeat left top;
@@ -91,7 +122,7 @@ body {
 	margin: 0;
  }
 
- .intro .summary p:last-child {
+ .intro .summary p:last-child,  {
 	padding: 1em 2em 0;
 	margin: 0;
  }
@@ -112,21 +143,17 @@ body {
 .intro .summary #firm-header .logo .amp {
 	font-family: "Average", Georgia, serif;
 	font-weight: normal;
-	color: #FFC107;
+	color: #F4FAD2;
 }
 
 .intro .summary #firm-header .logo #l-r {
-	vertical-align: 0.4em;
+	vertical-align: 0.45em;
   	font-size: 120%;
 }
 
 .intro .summary #firm-header .logo #l-b {
-	vertical-align: -0.4em;
+	vertical-align: -0.45em;
   	font-size: 120%;
-}
-
-.ital {
-	font-style: oblique;
 }
 
 .page-wrapper {
@@ -137,4 +164,15 @@ body {
 	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
   	box-sizing: border-box;
+}
+
+.vertical {
+	width: 2px;
+	color: #D8D8D8;
+  	background-color: #D8D8D8;
+	height: 1em;
+ 	margin: 0px;
+  	border: 0px;
+	display: inline-block;
+	vertical-align: -20%;
 }
