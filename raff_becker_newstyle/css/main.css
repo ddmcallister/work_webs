@@ -160,7 +160,7 @@ html, body {
 }
 
 .invis {
-	visibility: hidden;
+	display: none;
 }
 
 .left-col {

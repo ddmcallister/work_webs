@@ -30,7 +30,7 @@ body {
     background-image: -ms-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));
     background-image: -o-linear-gradient(left, rgba(0,0,0,0), #B8944D, rgba(0,0,0,0));*/
 	overflow: hidden;
-	width: 40%;
+	width: 35%;
 	float: left;
 	/*if keeping transition, add prefixes for other browsers*/
 	transition: all 0.4s ease;
@@ -71,20 +71,21 @@ body {
 	font-size: 150%;
 	color: #ffffff;
 	line-height: 1.25em;
-	width: 60%;
-	padding: 5em 0.5em 0 0.5em;
+	width: 65%;
+	padding: 0em 0.5em 0 0.5em;
 	box-sizing: border-box;
 }
 
 .intro header h2:nth-child(5) {
-	padding: 5em 0.5em 0 0.5em;
+	padding: 5em 0.5em 3em 0.5em;
 	font-size: 225%;
 }
 
 .intro header h2:last-child {
-	padding: 3em 0.5em 0 0.5em;
+	padding: 0 0.5em 0 0.5em;
 	font-size: 150%;
 	height: 15em;
+	line-height: 5em;
 }
 
 .intro header h2 .ital {
@@ -94,7 +95,7 @@ body {
 .intro .index-pic {
 	font-size: 100%;
   color: #1F1F1F;
-	width: 60%;
+	width: 65%;
 	float: left;
 	background: url("../img/75_New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg") no-repeat left top;
 	background-size: 101%;
@@ -168,6 +169,21 @@ body {
 .intro .index-pic #firm-header .logo #l-b {
 	vertical-align: -0.45em;
   	font-size: 120%;
+}
+
+.invis {
+	display: none;
+}
+
+.pa {
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  list-style-type: none;
+  line-height: 1.75em;
+  font-weight: 600;
+  background-color: rgba(250, 250, 250, 0.6);
 }
 
 .page-wrapper {
