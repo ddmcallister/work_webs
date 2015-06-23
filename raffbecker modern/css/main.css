@@ -38,7 +38,7 @@ body {
 
 .intro header h1 {
 	position: absolute;
-	font-size: 125%;
+	font-size: 105%;
 	color: #ffffff;
 	line-height: 2em;
 	top: 5em;
@@ -72,21 +72,23 @@ body {
 	color: #ffffff;
 	line-height: 1.25em;
 	width: 65%;
-	padding: 0em 0.5em 0 0.5em;
+	padding: 0em 0.5em 0 1em;
 	box-sizing: border-box;
 }
 
 .intro header h2:nth-child(5) {
-	padding: 5em 0.5em 3em 0.5em;
+	padding: 5em 0.5em 3em 1em;
 	font-size: 225%;
 }
 
-.intro header h2:last-child {
-	padding: 0 0.5em 0 0.5em;
-	font-size: 150%;
-	height: 15em;
-	line-height: 5em;
+.intro header h2:nth-child(7) {
+	height: 5em;
 }
+
+.intro header h2:nth-child(9) {
+	height: 15em;
+}
+
 
 .intro header h2 .ital {
 	font-style: oblique;
@@ -94,42 +96,32 @@ body {
 
 .intro .index-pic {
 	font-size: 100%;
-  color: #1F1F1F;
+  	color: #1F1F1F;
 	width: 65%;
 	float: left;
-	background: url("../img/75_New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg") no-repeat left top;
+	background: url("../img/turq_New_York_State_Supreme_Courthouse_60_Centre_Street_from_southwest.jpg") no-repeat left top;
 	background-size: 101%;
-	height: 30em;
+	height: 31em;
 	margin: 0;
 	padding: 3.5em 0 0 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-bottom: 0.5em solid #025454;
 }
 
 .intro .index-pic #firm-header {
 	width: 100%;
-/*	background-color: rgba(61, 54, 46, .25);*/
 	z-index: 1;
 	position: relative;
 }
 
-/*#horiz-gr-bar {
-  width: 60%;
-  height: 0.5em;
-  float: right;
-  background-color: rgb(96,145,112);
-
-}*/
+.intro .text-block {
+	width: 65%;
+  	float: right;
+}
 
 .intro .text-block p {
-	padding: 40% 2em 0;
-	margin: 0;
- }
-
- .intro .text-block p:last-child,  {
-	padding: 1em 2em 0;
+	padding: 2em 2em 1em;
 	margin: 0;
  }
 
@@ -184,6 +176,10 @@ body {
   line-height: 1.75em;
   font-weight: 600;
   background-color: rgba(250, 250, 250, 0.6);
+}
+
+.pa-display {
+	height: 101%;
 }
 
 .page-wrapper {

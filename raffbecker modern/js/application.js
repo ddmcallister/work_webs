@@ -5,9 +5,9 @@ function main() {
 			$('#employer-pa').removeClass('invis');
 			$('#employer-pa').addClass('pa');
 			$('#employee-index').addClass('invis');
-		}, function () {
+		}, function() {
 			$('#employer-pa').addClass('invis');
-			//$('#employer_pa').addClass('pa');
+			//$('#employer-pa').addClass('pa');
 			$('#employee-index').removeClass('invis');
 		});
 
@@ -18,7 +18,7 @@ function main() {
 			$('#employer-index').addClass('invis');
 		}, function () {
 			$('#employee-pa').addClass('invis');
-			//$('#employer_pa').addClass('pa');
+			//$('#employer-pa').addClass('pa');
 			$('#employer-index').removeClass('invis');
 		});
 
