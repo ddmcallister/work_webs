@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+}
+
+.float-right-vert {
+	position: fixed;
+	right: 0;
+	top: 10em;
+}
+
+.contact-button {
+	float: left;
+	width: 8em;
+	background: #6A6B5F;
+	color: #2C2B26;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
