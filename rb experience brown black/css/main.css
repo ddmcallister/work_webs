@@ -2,20 +2,135 @@
 	margin: 0;
 }
 
-.float-right-vert {
+body {
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 1.5em;
+}
+
+.body-wrap-top .float-right-vert {
 	position: fixed;
 	right: 0;
 	top: 10em;
 }
 
-.contact-button {
+.body-wrap-top .float-right-vert .contact-button {
 	float: left;
 	width: 8em;
-	background: #6A6B5F;
+	background: #B2B39F;
 	color: #2C2B26;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
+}
+
+.body-wrap-top .left-block-top {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+
+.body-wrap-top .left-block-top img {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background-size: cover;
+}
+
+.body-wrap-top .right-block-top {
+	width: 35%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .page-width-banner {
+	height: 8em;
+}
+
+
+#index-header .header-logo, .header-raffbecker {
+	font-family: 'Average', serif;
+  	font-size: 250%;
+  	color: #540202;
+  	margin: 0.5em;
+  	letter-spacing: -.3em;
+  	display: inline-block;
+}
+
+#index-header .header-raffbecker { 
+	letter-spacing: normal;
+	margin: 0.5em -0.1em;
+}
+
+#index-header .header-raffbecker #llp {
+	font-size: 45%;
+  	color: #025454;
+}
+
+#index-header .header-logo .amp {
+	font-family: "Average", Georgia, serif;
+	font-weight: normal;
+	/*	color: #F4FAD2;*/
+	/*color: rgba(84,2,2,.75);*/
+	color: #025454;
+  	font-size: 150%;
+}
+
+#index-header .header-logo #l-r {
+	vertical-align: 0.45em;
+  	font-size: 175%;
+}
+
+#index-header .header-logo #l-b {
+	vertical-align: -0.45em;
+  	font-size: 175%;
+}
+
+
+.middle-body-wrap article .text-block {
+	width: auto;
+}
+
+.middle-body-wrap #attorney-square {
+	width: 40%;
+	position: relative;
+	display: inline-block;
+}
+
+.middle-body-wrap #attorney-square .att-pic-cap {
+	background: #C8C9B5;
+	width: 200px;
+}
+
+.middle-body-wrap #attorney-square [id*="index"] {
+	position: relative;
+	display: inline-block;
+}
+
+.middle-body-wrap #attorney-square [id*="index"] img {
+	width: 200px;
+	height: 176px;
+	overflow: hidden;
+}
+
+.middle-body-wrap .text-block {
+	position: relative;
+	display: inline-block;
+	width: 55%;
+  	vertical-align: top;
+}
+
+.page-width-banner {
+	background: #3D423C;
+	height: 6em;
+	color: white;
+}
+
+.page-width-banner .banner-left-block, .banner-right-block {
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	color: white;
 }
