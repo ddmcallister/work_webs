@@ -3,27 +3,37 @@
 }
 
 body {
-	font-family: "Lato", Arial, sans-serif;
-	line-height: 1.5em;
+/*	font-family: "Lato", Arial, sans-serif;*/
+	font-family: 'Muli', sans-serif;
+	line-height: 1.75em;
+	color: #2C2B26;
 }
 
 .body-wrap-top .float-right-vert {
 	position: relative;
-  	top: 5em;
+/*  	top: 5em;*/
   	float: right;
   	margin-right: -3em;
 }
 
 .body-wrap-top .float-right-vert .contact-button {
 	width: 8em;
-	background: #E9E9E9;
-	color: #2C2B26;
+	background: #025454;
+	color: white;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
+	text-align: center;
+	cursor: pointer;
 }
+
+.body-wrap-top .float-right-vert .contact-button a {
+	color: white;
+	text-decoration: none;
+}
+
 
 .body-wrap-top .left-block-top {
 	position: relative;
@@ -36,17 +46,33 @@ body {
 	display: inline-block;
 	width: 100%;
 	background-size: cover;
+	margin-left: 0.5em;
 }
 
 .body-wrap-top .right-block-top {
-	width: 35%;
+	width: 40%;
+	margin-left: 1.5em;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 }
 
+.body-wrap-top .right-block-top p {
+	margin-bottom: 2em; 
+}
+
+.body-wrap-top .right-block-top h3 {
+/*	font-family: 'Average', serif;*/
+/*	font-family: 'Ovo', serif;*/
+	font-family: 'Sacramento', serif;
+	font-size: 300%;
+	margin: 2em 0 0 40%;
+	color: #660000;
+}
+
 footer .page-width-banner {
 	height: 8em;
+
 }
 
 h1, h2, h3, h4, h5, p {
@@ -55,17 +81,17 @@ h1, h2, h3, h4, h5, p {
 
 
 #index-header .header-logo, .header-raffbecker {
-	font-family: 'Average', serif;
+	font-family: 'Ovo', serif;
   	font-size: 250%;
-  	color: #540202;
+  	color: #660000;
   	margin: 0.5em;
-  	letter-spacing: -.3em;
+  	letter-spacing: -.5em;
   	display: inline-block;
 }
 
 #index-header .header-raffbecker { 
 	letter-spacing: normal;
-	margin: 0.5em -0.1em;
+	margin: 0.5em -2em;
 }
 
 #index-header .header-raffbecker #llp {
@@ -74,7 +100,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 #index-header .header-logo .amp {
-	font-family: "Average", Georgia, serif;
+/*	font-family: "Average", Georgia, serif;*/
+	font-family: 'Ovo', serif;
 	font-weight: normal;
 	/*	color: #F4FAD2;*/
 	/*color: rgba(84,2,2,.75);*/
@@ -92,45 +119,99 @@ h1, h2, h3, h4, h5, p {
   	font-size: 175%;
 }
 
+.middle-body-wrap {
+	padding: 3em 0;
+  	background: #F7F9F8;
+}
+
 
 .middle-body-wrap article .text-block {
 	width: auto;
 }
 
 .middle-body-wrap #attorney-square {
-	width: 40%;
 	position: relative;
 	display: inline-block;
+  	width: 70%;
 }
 
 .middle-body-wrap #attorney-square .att-pic-cap {
-	background: #C8C9B5;
-	width: 200px;
+	background: #BE3100;
+	width: 250px;
+	display: none;
 }
 
 .middle-body-wrap #attorney-square [id*="index"] {
 	position: relative;
 	display: inline-block;
+	margin-right: .5em;
 }
+
+
 
 .middle-body-wrap #attorney-square [id*="index"] img {
 	width: 200px;
 	height: 176px;
 	overflow: hidden;
+	-webkit-filter: grayscale(1) sepia(.85);
+  	filter: grayscale(1) sepia(.85);
+}
+
+.middle-body-wrap #attorney-square [id*="index"] img:hover {
+	-webkit-filter: none;
+  	filter: none;
+  	cursor: pointer;
+  	width: 250px;
+  	height: auto;
+  	-webkit-box-shadow: 10px 10px 5px #888888;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+
+
+}
+
+.middle-body-wrap h2 {
+	font-family: 'Fjalla One', sans-serif;
+	width: 15%;
+	color: #BE3100;
 }
 
 .middle-body-wrap .text-block {
 	position: relative;
-	display: inline-block;
-	width: 55%;
   	vertical-align: top;
+  	display: inline-block;
+  	width: 20%;
+  	padding: 0 3%;
+}
+
+#pa-example-flip{
+	position: relative;
+	display: inline-block;
+	height: 2em;
+}
+
+ul {
+	width: 400px;
+	list-style: none;
+}
+li {
+	opacity: 0;
+	left: 80%; 
+	position: relative;
 }
 
 .page-width-banner {
-/*	background: #3D423C;*/
-	background: #BCBCBC;
-	height: 6em;
-	color: white;
+	height: 4em;
+  	width: 99%;
+  	position: relative;
+  	margin: 0 auto;
+	background: -webkit-linear-gradient(to right, #AAAAAA, #747474);
+	background: -o-linear-gradient(to right, #AAAAAA, #747474);
+	background: -moz-linear-gradient(to right, #AAAAAA, #747474);
+	background: linear-gradient(to right, #AAAAAA, #747474);
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .page-width-banner .banner-left-block, .banner-right-block {
@@ -140,5 +221,13 @@ h1, h2, h3, h4, h5, p {
 	color: white;
 }
 
-ul{width:400px;list-style:none;}
-li{opacity:0;left:100%;position:relative;}
+.page-width-banner h2 {
+	padding: 0.75em 0 .25em 1em;
+  	font-size: 175%;
+}
+
+.page-width-banner h2 a {
+	color: #025454;
+}
+
+
