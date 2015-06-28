@@ -8,15 +8,15 @@ body {
 }
 
 .body-wrap-top .float-right-vert {
-	position: fixed;
-	right: 0;
-	top: 10em;
+	position: relative;
+  	top: 5em;
+  	float: right;
+  	margin-right: -3em;
 }
 
 .body-wrap-top .float-right-vert .contact-button {
-	float: left;
 	width: 8em;
-	background: #B2B39F;
+	background: #E9E9E9;
 	color: #2C2B26;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -47,6 +47,10 @@ body {
 
 footer .page-width-banner {
 	height: 8em;
+}
+
+h1, h2, h3, h4, h5, p {
+	margin: 0 1em;
 }
 
 
@@ -123,7 +127,8 @@ footer .page-width-banner {
 }
 
 .page-width-banner {
-	background: #3D423C;
+/*	background: #3D423C;*/
+	background: #BCBCBC;
 	height: 6em;
 	color: white;
 }
@@ -134,3 +139,6 @@ footer .page-width-banner {
 	width: 40%;
 	color: white;
 }
+
+ul{width:400px;list-style:none;}
+li{opacity:0;left:100%;position:relative;}
