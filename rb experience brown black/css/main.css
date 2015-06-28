@@ -72,6 +72,9 @@ body {
 
 footer .page-width-banner {
 	height: 8em;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 
 }
 
@@ -136,8 +139,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 .middle-body-wrap #attorney-square .att-pic-cap {
-	background: #BE3100;
-	width: 250px;
 	display: none;
 }
 
@@ -146,8 +147,6 @@ h1, h2, h3, h4, h5, p {
 	display: inline-block;
 	margin-right: .5em;
 }
-
-
 
 .middle-body-wrap #attorney-square [id*="index"] img {
 	width: 200px;
@@ -163,10 +162,10 @@ h1, h2, h3, h4, h5, p {
   	cursor: pointer;
   	width: 250px;
   	height: auto;
-  	-webkit-box-shadow: 10px 10px 5px #888888;
+/*  	-webkit-box-shadow: 10px 10px 5px #888888;
 	-moz-box-shadow: 10px 10px 5px #888888;
 	box-shadow: 10px 10px 5px #888888;
-
+*/
 
 }
 
@@ -184,10 +183,17 @@ h1, h2, h3, h4, h5, p {
   	padding: 0 3%;
 }
 
-#pa-example-flip{
+#pa-flip{
 	position: relative;
 	display: inline-block;
 	height: 2em;
+}
+
+#pa-examples {
+	display: inline-block;
+  	text-align: left;
+  	padding: 1.75em 3em 0 0;
+  	float: right;
 }
 
 ul {
@@ -196,8 +202,11 @@ ul {
 }
 li {
 	opacity: 0;
-	left: 80%; 
+	height: 0;
 	position: relative;
+	font-family: 'Fjalla One', sans-serif;
+  	color: #BE3100;
+  	font-size: 1.4em;
 }
 
 .page-width-banner {
@@ -228,6 +237,14 @@ li {
 
 .page-width-banner h2 a {
 	color: #025454;
+}
+
+.pre-footer {
+	height: 6em;
+  	line-height: 1.25em;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 

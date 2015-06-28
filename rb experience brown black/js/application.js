@@ -1,37 +1,26 @@
 function main() {
 	$("#attorney-square [id*='index'] img").hover(function() {
-		$(this).next().css('display', 'inline');
-	}, function () {
-		$(this).next().css('display', 'none');
-	}
-
-		);
-
-/*var i = 0;
-$('ul').each(function() {
-    //var hide_after = $(this).children().length;
-    $(this).children().each(function(counter) {
-
-            .delay(++i * 2000)
-            .animate({top:0, opacity:1})
-            //.delay((hide_after - counter) * 2000)
-			.delay(2000)
-            .animate({bottom:'100%', opacity: 0});
-    });
-});*/
-/*	var i = $('li').length;
-	 $('li').each(function() {
-		if ($(this.i).css("opacity", "0")) {
-			$(this.i).css("opacity", "1");
-		} else {
-			$(this.i).css("opacity", "0");
+			$(this).next().css({'display': 'block', 'background': '#BE3100', 'width': '250px'});
+		}, function () {
+			$(this).next().css('display', 'none');
 		}
-	// 	$('li'.i).fadeIn();
-	// 	$('li'.i).fadeIn();
-	// 	//$(this).fadeIn();
- //        //$(this).fadeOut();
-	// 	});
-});*/
-	}
+	);
+
+	var j = 0;
+	var delay = 4000;
+	function cycleThru(){
+	     var jmax = $("ul#pa-flip li").length -1;
+	     $("ul#pa-flip li:eq(" + j + ")")
+	        .animate({"opacity": "1", "height": "2em"}, 600)
+	        .animate({"opacity" : "1", "height": "2em"}, delay)
+	        .animate({"opacity" : "0", "height": "0"}, 600, function(){
+	            (j == jmax) ? j=0 : j++;
+	            cycleThru();
+	        });
+	};
+
+	cycleThru();
+
+}
 
 $(document).ready(main);
