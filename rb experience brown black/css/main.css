@@ -2,22 +2,31 @@
 	margin: 0;
 }
 
+a {
+	color: #025454;
+}
+
 body {
-/*	font-family: "Lato", Arial, sans-serif;*/
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli', Arial, sans-serif;
 	line-height: 1.75em;
 	color: #2C2B26;
+	background: #F7F9F8;
+}
+
+.body-wrap-top {
+	background: white;
 }
 
 .body-wrap-top .float-right-vert {
 	position: relative;
-/*  	top: 5em;*/
+  	top: 5em;
   	float: right;
   	margin-right: -3em;
 }
 
 .body-wrap-top .float-right-vert .contact-button {
 	width: 8em;
+	height: 8em;
 	background: #025454;
 	color: white;
 	-webkit-transform: rotate(-90deg);
@@ -32,6 +41,8 @@ body {
 .body-wrap-top .float-right-vert .contact-button a {
 	color: white;
 	text-decoration: none;
+	font-size: 1.75em;
+  	line-height: 3em;
 }
 
 
@@ -62,8 +73,6 @@ body {
 }
 
 .body-wrap-top .right-block-top h3 {
-/*	font-family: 'Average', serif;*/
-/*	font-family: 'Ovo', serif;*/
 	font-family: 'Sacramento', serif;
 	font-size: 300%;
 	margin: 2em 0 0 40%;
@@ -82,6 +91,9 @@ h1, h2, h3, h4, h5, p {
 	margin: 0 1em;
 }
 
+#index-header {
+	background: white;
+}
 
 #index-header .header-logo, .header-raffbecker {
 	font-family: 'Ovo', serif;
@@ -162,11 +174,6 @@ h1, h2, h3, h4, h5, p {
   	cursor: pointer;
   	width: 250px;
   	height: auto;
-/*  	-webkit-box-shadow: 10px 10px 5px #888888;
-	-moz-box-shadow: 10px 10px 5px #888888;
-	box-shadow: 10px 10px 5px #888888;
-*/
-
 }
 
 .middle-body-wrap h2 {
@@ -191,8 +198,9 @@ h1, h2, h3, h4, h5, p {
 
 #pa-examples {
 	display: inline-block;
-  	text-align: left;
-  	padding: 1.75em 3em 0 0;
+  	text-align: right;
+  	margin-right: 2em;
+  	padding: 1.75em 0 0 0;
   	float: right;
 }
 
@@ -209,9 +217,13 @@ li {
   	font-size: 1.4em;
 }
 
-.page-width-banner {
+.page-break-a {
 	height: 4em;
+}
+
+.page-width-banner, .page-break-a {
   	width: 99%;
+  	height: 8em;
   	position: relative;
   	margin: 0 auto;
 	background: -webkit-linear-gradient(to right, #AAAAAA, #747474);
@@ -225,26 +237,55 @@ li {
 
 .page-width-banner .banner-left-block, .banner-right-block {
 	position: relative;
-	display: inline-block;
-	width: 40%;
+/*	width: 40%;*/
 	color: white;
 }
 
-.page-width-banner h2 {
+.page-break-a h2 {
 	padding: 0.75em 0 .25em 1em;
   	font-size: 175%;
 }
 
-.page-width-banner h2 a {
-	color: #025454;
-}
-
 .pre-footer {
-	height: 6em;
   	line-height: 1.25em;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
 
+.address-block {
 
+}
+
+
+.call-button, .email-button {
+	margin: 1em;
+
+}
+
+.email-button {
+
+}
+
+.pre-footer h3 {
+	font-size: 3em;
+	color: white;
+}
+
+.pre-footer .banner-left-block {
+	width: 49%;
+
+}
+
+.pre-footer .banner-right-block {
+	width: 49%;	
+}
+
+.pre-footer .banner-right-block .phone-click-call {
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#peer-review-badge {
+	float: right;
+}
