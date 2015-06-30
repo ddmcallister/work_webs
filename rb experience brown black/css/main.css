@@ -17,14 +17,21 @@ body {
 	background: white;
 }
 
-.body-wrap-top .float-right-vert {
+.body-wrap-top .float-right-vert, .all-header .float-right-vert {
 	position: relative;
   	top: 5em;
   	float: right;
   	margin-right: -3em;
 }
 
-.body-wrap-top .float-right-vert .contact-button {
+.all-header .float-right-vert {
+	top: 0;
+	margin-right: 4em;
+
+}
+
+
+.body-wrap-top .float-right-vert .contact-button, .all-header .float-right-vert .contact-button {
 	width: 8em;
 	height: 8em;
 	background: #025454;
@@ -38,11 +45,37 @@ body {
 	cursor: pointer;
 }
 
-.body-wrap-top .float-right-vert .contact-button a {
+.all-header .float-right-vert .contact-button {
+	width: 8em;
+	height: 3em;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	margin-top: 1em;
+
+}
+
+.body-wrap-top .float-right-vert .contact-button a, .all-header .float-right-vert .contact-button a {
 	color: white;
 	text-decoration: none;
 	font-size: 1.75em;
   	line-height: 3em;
+}
+ .all-header .float-right-vert .contact-button a {
+ 	font-size: 1.25em;
+ 	line-height: 2.5em;
+ }
+
+.email-header {
+	font-size: 2em;
+	cursor: pointer;
+	color: #025454;
+	float: right;
+	position: relative;
+	display: block;
+	top: 3em;
 }
 
 
@@ -91,11 +124,11 @@ h1, h2, h3, h4, h5, p {
 	margin: 0 1em;
 }
 
-#index-header {
+.all-header {
 	background: white;
 }
 
-#index-header .header-logo, .header-raffbecker {
+.all-header .header-logo, .header-raffbecker  {
 	font-family: 'Ovo', serif;
   	font-size: 250%;
   	color: #660000;
@@ -104,17 +137,17 @@ h1, h2, h3, h4, h5, p {
   	display: inline-block;
 }
 
-#index-header .header-raffbecker { 
+.all-header .header-raffbecker { 
 	letter-spacing: normal;
 	margin: 0.5em -2em;
 }
 
-#index-header .header-raffbecker #llp {
+.all-header .header-raffbecker #llp {
 	font-size: 45%;
   	color: #025454;
 }
 
-#index-header .header-logo .amp {
+.all-header .header-logo .amp {
 /*	font-family: "Average", Georgia, serif;*/
 	font-family: 'Ovo', serif;
 	font-weight: normal;
@@ -124,12 +157,12 @@ h1, h2, h3, h4, h5, p {
   	font-size: 150%;
 }
 
-#index-header .header-logo #l-r {
+.all-header .header-logo #l-r {
 	vertical-align: 0.45em;
   	font-size: 175%;
 }
 
-#index-header .header-logo #l-b {
+.all-header .header-logo #l-b {
 	vertical-align: -0.45em;
   	font-size: 175%;
 }
