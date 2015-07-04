@@ -1,4 +1,5 @@
 function main() {
+
 	$("#attorney-square [id*='index'] img").hover(function() {
 			$(this).next().css({'display': 'block', 'background': '#BE3100', 'width': '250px'});
 		}, function () {
@@ -18,8 +19,33 @@ function main() {
 	            cycleThru();
 	        });
 	};
-
 	cycleThru();
+
+ 
+
+	function playVideo() { 
+		$("#index-vid").removeClass("hidden");    
+	   $("#vid-pic").css('display', 'none');
+	   var vid = $("#index-vid");
+	    vid.controls = false;
+	    vid.load();
+	    vid.on('ended',function(){
+		$("#vid-pic").css('display', 'inline-block');    
+	   	$(vid).css('display', 'none');
+		});
+	} 
+	playVideo();
+
+
+/*<script type="text/javascript">
+var video= $('#myvideo')[0]; 
+var videoJ= $('#myvideo');        
+videoJ.on('ended',function(){
+    video.load();     
+});
+</script>*/
+
+
 
 }
 

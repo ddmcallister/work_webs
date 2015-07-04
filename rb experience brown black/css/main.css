@@ -79,16 +79,21 @@ body {
 }
 
 
-.body-wrap-top .left-block-top {
+.body-wrap-top .left-block-top  {
 	position: relative;
 	display: inline-block;
-	width: 50%;
+	width: 40em;
+	height: 20.2em;
 }
 
-.body-wrap-top .left-block-top img {
+/*.body-wrap-top .left-block-top {
+	display: none;
+}*/
+
+.left-block-top img, .left-block-top video  {
 	position: relative;
-	display: inline-block;
 	width: 100%;
+	display: inline-block;
 	background-size: cover;
 	margin-left: 0.5em;
 }
@@ -165,6 +170,10 @@ h1, h2, h3, h4, h5, p {
 .all-header .header-logo #l-b {
 	vertical-align: -0.45em;
   	font-size: 175%;
+}
+
+.hidden {
+	display: none;
 }
 
 .middle-body-wrap {
