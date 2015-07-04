@@ -79,26 +79,22 @@ body {
 }
 
 
-.body-wrap-top .left-block-top  {
+.left-block-top  {
 	position: relative;
 	display: inline-block;
-	width: 40em;
-	height: 20.2em;
 }
-
-/*.body-wrap-top .left-block-top {
-	display: none;
-}*/
 
 .left-block-top img, .left-block-top video  {
 	position: relative;
-	width: 100%;
+	width: 40em;
+	height: 20.2em;
 	display: inline-block;
 	background-size: cover;
+	overflow: hidden;
 	margin-left: 0.5em;
 }
 
-.body-wrap-top .right-block-top {
+.right-block-top {
 	width: 40%;
 	margin-left: 1.5em;
 	position: relative;
@@ -106,7 +102,7 @@ body {
 	vertical-align: top;
 }
 
-.body-wrap-top .right-block-top p {
+.right-block-top p {
 	margin-bottom: 2em; 
 }
 
