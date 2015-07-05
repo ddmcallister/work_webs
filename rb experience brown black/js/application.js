@@ -24,16 +24,25 @@ function main() {
  
 
 	function playVideo() { 
-		$("#index-vid").removeClass("hidden");    
-	   $("#vid-pic").css('display', 'none');
-	   var vid = $("#index-vid");
+		$("#index-vid-a").removeClass("hidden");    
+	   	$("#vid-pic").css('display', 'none');
+	   	$("#index-vid-b").css('display', 'none');
+	   	var vid = $("#index-vid-a");
 	    vid.controls = false;
 	    vid.load();
 	    vid.on('ended',function(){
-		$("#vid-pic").css('display', 'inline-block');    
-	   	$(vid).css('display', 'none');
-		});
-	} 
+	    	$(vid).css('display', 'none');
+			$("#index-vid-b").css('display', 'inline-block');
+			var vidb = $("#index-vid-b");
+			vidb.controls = false;
+	    	vidb.load();
+	    	vidb.on('ended',function(){    
+	   			$(vidb).css('display', 'none');
+				$("#vid-pic").css('display', 'inline-block');
+			});
+	}); 
+
+	}
 	playVideo();
 
 

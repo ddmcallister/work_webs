@@ -6,6 +6,45 @@ a {
 	color: #025454;
 }
 
+.atty-nav-bar {
+	height: 84em;
+	background: -webkit-radial-gradient(#c2a34f, #FBB829);
+	background: -o-radial-gradient(#c2a34f, #FBB829);
+	background: -moz-radial-gradient(#c2a34f, #FBB829);
+	background: radial-gradient(#c2a34f, #FBB829);
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+.atty-nav-bar .here {
+	font-size: 1.5em;
+	cursor: none;
+	color: white;
+}
+
+.atty-nav-bar .not-here {
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.right-block-top.atty-page-pic {
+	width: 30%;
+}
+
+.atty-page-pic #ssalaz-pic {
+	width: 100%;
+}
+
+.atty-sub-lists {
+	margin: 0 0 0 4em;
+}
+
+.atty-sub-lists ul {
+	width: 80%;
+}
+
 body {
 	font-family: 'Muli', Arial, sans-serif;
 	line-height: 1.75em;
@@ -75,13 +114,18 @@ body {
 	float: right;
 	position: relative;
 	display: block;
-	top: 3em;
+	top: 2.75em;
+	margin-right: -4em;
 }
 
 
 .left-block-top  {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+
+.left-block-top.atty-block {
+	width: 40%;
 }
 
 .left-block-top img, .left-block-top video  {
@@ -125,8 +169,17 @@ h1, h2, h3, h4, h5, p {
 	margin: 0 1em;
 }
 
+header {
+	background: #ffffff;
+	margin: 0;
+}
+
 .all-header {
 	background: white;
+}
+
+.all-header.atty-hdr {
+	padding: 1em 0 0 2em;
 }
 
 .all-header .header-logo, .header-raffbecker  {
@@ -246,7 +299,7 @@ ul {
 	width: 400px;
 	list-style: none;
 }
-li {
+li.no-show {
 	opacity: 0;
 	height: 0;
 	position: relative;
@@ -255,8 +308,18 @@ li {
   	font-size: 1.4em;
 }
 
+li.first-li {
+	position: relative;
+	font-family: 'Fjalla One', sans-serif;
+  	color: #BE3100;
+  	font-size: 1.4em;
+}
+
 .page-break-a {
 	height: 4em;
+
+
+
 }
 
 .page-width-banner, .page-break-a {
@@ -264,6 +327,10 @@ li {
   	height: 8em;
   	position: relative;
   	margin: 0 auto;
+/*  	background: -webkit-radial-gradient(#c2a34f, #FBB829);
+	background: -o-radial-gradient(#c2a34f, #FBB829);
+	background: -moz-radial-gradient(#c2a34f, #FBB829);
+	background: radial-gradient(#c2a34f, #FBB829);*/
 	background: -webkit-linear-gradient(to right, #AAAAAA, #747474);
 	background: -o-linear-gradient(to right, #AAAAAA, #747474);
 	background: -moz-linear-gradient(to right, #AAAAAA, #747474);
@@ -291,10 +358,9 @@ li {
 	box-shadow: none;
 }
 
-.address-block {
-
+#susan-pg {
+	background: #ffffff;
 }
-
 
 .call-button, .email-button {
 	margin: 1em;
