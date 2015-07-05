@@ -141,6 +141,7 @@ body {
 .right-block-top {
 	width: 40%;
 	margin-left: 1.5em;
+	padding-bottom: 2.5em;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
