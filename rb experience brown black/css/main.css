@@ -39,7 +39,7 @@ a {
 }
 
 .right-block-top.atty-page-pic {
-	width: 30%;
+	width: 35%;
 }
 
 .atty-page-pic #ssalaz-pic {
@@ -58,12 +58,53 @@ a {
 	color: #660000;
 }
 
-.left-block-top.atty-block p {
+.left-block-top.atty-block {
+	width: 35%;
+}
+
+.right-block-top.atty-block {
+	width: 25%;
+	margin-top: 4em;
+}
+
+.left-block-top.atty-block a, .right-block-top.atty-block a {
+	color: #660000;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.left-block-top.atty-block p, .right-block-top.atty-block p {
 	margin-bottom: 2em;
-	margin-bottom: 2em;
-	padding: 0 1em;
 	text-align: justify;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+}
+
+.right-block-top.atty-block p {
+	margin-top: 3em;
+}
+
+.left-block-top.atty-block img {
+	width: 100%;
+}
+
+.right-block-top.atty-block .pa-redirect-area {
+	margin: 2em;
+
+
+}
+
+.right-block-top.atty-block .pa-redirect-area h2 {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	margin: 0 0 1.5em 0;
+}
+
+.right-block-top.atty-block .pa-redirect-area #employees-btn, #employers-btn {
+	font-family: 'Sacramento', serif;
+	font-size: 2.5em;
+	float: right;
+	margin: 0 0 1em 0;
 }
 
 
@@ -146,11 +187,8 @@ body {
   display: inline-block;
 }
 
-.left-block-top.atty-block {
-	width: 35%;
-}
 
-.left-block-top img, .left-block-top video  {
+.left-block-top video  {
 	position: relative;
 	width: 40em;
 	height: 20.2em;
@@ -402,24 +440,7 @@ li.first-li {
 	margin: 1em;
 
 }
-.pa-redirect-area {
-	margin: 2em;
 
-
-}
-
-.pa-redirect-area h2 {
-	font-family: 'Source Sans Pro', Arial, sans-serif;
-	margin: 0 0 1.5em 0;
-}
-
-.pa-redirect-area p {
-	font-family: 'Sacramento', serif;
-	font-size: 2.5em;
-	float: right;
-	margin: 0 0 1em 0;
-
-}
 
 .pre-footer h3 {
 	font-size: 3em;
