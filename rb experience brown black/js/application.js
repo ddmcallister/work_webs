@@ -1,11 +1,11 @@
 function main() {
 
-	$("#attorney-square [id*='index'] img").hover(function() {
+/*	$("#attorney-square [id*='index'] img").hover(function() {
 			$(this).next().css({'display': 'block', 'background': '#BE3100', 'width': '250px'});
 		}, function () {
 			$(this).next().css('display', 'none');
 		}
-	);
+	);*/
 
 	var j = 0;
 	var delay = 4000;
@@ -23,7 +23,7 @@ function main() {
 
  
 
-	function playVideo() { 
+/*	function playVideo() { 
 		$("#index-vid-a").removeClass("hidden");    
 	   	$("#vid-pic").css('display', 'none');
 	   	$("#index-vid-b").css('display', 'none');
@@ -43,7 +43,7 @@ function main() {
 	}); 
 
 	}
-	playVideo();
+	playVideo();*/
 
 
 /*<script type="text/javascript">

@@ -7,26 +7,35 @@ a {
 }
 
 .atty-nav-bar {
-	height: 84em;
-	background: -webkit-radial-gradient(#c2a34f, #FBB829);
-	background: -o-radial-gradient(#c2a34f, #FBB829);
-	background: -moz-radial-gradient(#c2a34f, #FBB829);
-	background: radial-gradient(#c2a34f, #FBB829);
+	height: 70em;
+	background: -webkit-radial-gradient(#ffcc33, #996633);
+	background: -o-radial-gradient(#ffcc33, #996633);
+	background: -moz-radial-gradient(#ffcc33, #996633);
+	background: linear-gradient(to right, #e6ac00, #ffcc33);
 	position: relative;
 	display: inline-block;
-	width: 25%;
+	width: 30%;
 	vertical-align: top;
+	padding-top: 1.5em;
+	margin-left: 1.5em;
+}
+
+.atty-nav-bar a {
+	color: #000000;
 }
 
 .atty-nav-bar .here {
-	font-size: 1.5em;
+	font-size: 2em;
 	cursor: none;
 	color: white;
+	line-height: 2em;
 }
 
 .atty-nav-bar .not-here {
 	font-size: 1.25em;
 	cursor: pointer;
+	line-height: 2em;
+	width: 8em;
 }
 
 .right-block-top.atty-page-pic {
@@ -44,6 +53,19 @@ a {
 .atty-sub-lists ul {
 	width: 80%;
 }
+
+.atty-sub-lists h3 {
+	color: #660000;
+}
+
+.left-block-top.atty-block p {
+	margin-bottom: 2em;
+	margin-bottom: 2em;
+	padding: 0 1em;
+	text-align: justify;
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
 
 body {
 	font-family: 'Muli', Arial, sans-serif;
@@ -65,7 +87,7 @@ body {
 
 .all-header .float-right-vert {
 	top: 0;
-	margin-right: 4em;
+	margin-right: 1.5em;
 
 }
 
@@ -125,7 +147,7 @@ body {
 }
 
 .left-block-top.atty-block {
-	width: 40%;
+	width: 35%;
 }
 
 .left-block-top img, .left-block-top video  {
@@ -197,19 +219,23 @@ header {
 	margin: 0.5em -2em;
 }
 
-.all-header .header-raffbecker #llp {
+.all-header .header-raffbecker .llp {
 	font-size: 45%;
-  	color: #025454;
+
 }
 
+.all-header .header-raffbecker .llp#home-llp {
+	color: #025454;
+} 
+
 .all-header .header-logo .amp {
-/*	font-family: "Average", Georgia, serif;*/
 	font-family: 'Ovo', serif;
 	font-weight: normal;
-	/*	color: #F4FAD2;*/
-	/*color: rgba(84,2,2,.75);*/
-	color: #025454;
   	font-size: 150%;
+}
+
+.all-header .header-logo .amp#home-amp {
+	color: #025454;
 }
 
 .all-header .header-logo #l-r {
@@ -242,8 +268,17 @@ header {
   	width: 70%;
 }
 
+.middle-body-wrap #attorney-square a {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+
 .middle-body-wrap #attorney-square .att-pic-cap {
-	display: none;
+/*	display: none;*/
+	display: block;
+	background: #BE3100;
+	width: 220px;
 }
 
 .middle-body-wrap #attorney-square [id*="index"] {
@@ -252,20 +287,22 @@ header {
 	margin-right: .5em;
 }
 
-.middle-body-wrap #attorney-square [id*="index"] img {
+/*.middle-body-wrap #attorney-square [id*="index"] img {
 	width: 200px;
 	height: 176px;
 	overflow: hidden;
 	-webkit-filter: grayscale(1) sepia(.85);
   	filter: grayscale(1) sepia(.85);
-}
+}*/
 
-.middle-body-wrap #attorney-square [id*="index"] img:hover {
+.middle-body-wrap #attorney-square [id*="index"] img {
 	-webkit-filter: none;
   	filter: none;
   	cursor: pointer;
-  	width: 250px;
-  	height: auto;
+	width: 220px;
+	height: 196px;
+	overflow: hidden;
+	margin-right: .25em;
 }
 
 .middle-body-wrap h2 {
@@ -300,6 +337,7 @@ ul {
 	width: 400px;
 	list-style: none;
 }
+
 li.no-show {
 	opacity: 0;
 	height: 0;
@@ -318,9 +356,6 @@ li.first-li {
 
 .page-break-a {
 	height: 4em;
-
-
-
 }
 
 .page-width-banner, .page-break-a {
@@ -335,7 +370,7 @@ li.first-li {
 	background: -webkit-linear-gradient(to right, #AAAAAA, #747474);
 	background: -o-linear-gradient(to right, #AAAAAA, #747474);
 	background: -moz-linear-gradient(to right, #AAAAAA, #747474);
-	background: linear-gradient(to right, #AAAAAA, #747474);
+	background: linear-gradient(to right, #cccccc, #666666);
 	-webkit-box-shadow: 10px 10px 5px #888888;
 	-moz-box-shadow: 10px 10px 5px #888888;
 	box-shadow: 10px 10px 5px #888888;
@@ -367,8 +402,22 @@ li.first-li {
 	margin: 1em;
 
 }
+.pa-redirect-area {
+	margin: 2em;
 
-.email-button {
+
+}
+
+.pa-redirect-area h2 {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	margin: 0 0 1.5em 0;
+}
+
+.pa-redirect-area p {
+	font-family: 'Sacramento', serif;
+	font-size: 2.5em;
+	float: right;
+	margin: 0 0 1em 0;
 
 }
 
