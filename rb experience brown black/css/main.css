@@ -6,8 +6,21 @@ a {
 	color: #025454;
 }
 
+.address-block {
+	float: right;
+	position: relative;
+	display: inline-block;
+	margin-top: 10em;
+}
+
+.address-block #address p {
+	display: block;
+	text-align: left;
+	margin: 0;
+}
+
 .atty-nav-bar {
-	height: 70em;
+	height: 80em;
 	background: -webkit-radial-gradient(#ffcc33, #996633);
 	background: -o-radial-gradient(#ffcc33, #996633);
 	background: -moz-radial-gradient(#ffcc33, #996633);
@@ -16,8 +29,9 @@ a {
 	display: inline-block;
 	width: 30%;
 	vertical-align: top;
-	padding-top: 1.5em;
+	margin-top: -9.5em;
 	margin-left: 1.5em;
+	z-index: 0;
 }
 
 .atty-nav-bar a {
@@ -251,6 +265,8 @@ header {
   	margin: 0.5em;
   	letter-spacing: -.5em;
   	display: inline-block;
+  	position: relative;
+	z-index: 1;
 }
 
 .all-header .header-raffbecker { 
@@ -370,6 +386,10 @@ header {
   	margin-right: 2em;
   	padding: 1.75em 0 0 0;
   	float: right;
+}
+
+.atty-listing {
+	margin-top: 15em;
 }
 
 ul {
