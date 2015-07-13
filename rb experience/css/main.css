@@ -279,9 +279,23 @@ header {
 
 }
 
-.all-header .header-raffbecker .llp#home-llp {
+.all-header .header-raffbecker .llp#home-llp,  {
 	color: #025454;
 } 
+
+
+.all-header .header-logo a {
+	text-decoration: none;
+	  font-family: 'Ovo', serif;
+  font-size: 100%;
+  color: #660000;
+  margin: 0.5em;
+  letter-spacing: -.5em;
+  display: inline-block;
+  position: relative;
+  z-index: 1
+
+}
 
 .all-header .header-logo .amp {
 	font-family: 'Ovo', serif;
@@ -302,6 +316,7 @@ header {
 	vertical-align: -0.45em;
   	font-size: 175%;
 }
+
 
 .hidden {
 	display: none;
