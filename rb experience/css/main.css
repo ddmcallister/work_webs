@@ -401,6 +401,8 @@ li.first-li {
 .page-break-a h2 {
 	padding: 0.75em 0 .25em 1em;
   	font-size: 175%;
+  	font-family: 'Playfair Display', Georgia, serif;
+  	font-weight: 400;
 }
 
 .page-width-banner, .page-break-a {
@@ -470,6 +472,7 @@ li.first-li {
 	margin-bottom: 2em; 
 }
 
+
 .right-block-top.atty-page-pic {
 	width: 35%;
 	margin-top: 4em;
@@ -487,7 +490,7 @@ li.first-li {
 }
 
 .right-block-top.atty-block .pa-redirect-area {
-	margin: 2em;
+	margin: 2em 2em 19em 2em;
 }
 
 .right-block-top.atty-block .pa-redirect-area h2 {
@@ -508,10 +511,6 @@ li.first-li {
 
 #susan-pg {
 	background: #ffffff;
-}
-
-.text-block.atty-sub-lists {
-	padding-top: 21.25em;
 }
 
 ul {
