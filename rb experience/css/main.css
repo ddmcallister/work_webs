@@ -4,6 +4,12 @@
 
 a {
 	color: #025454;
+	text-decoration: none;
+
+}
+
+a::hover {
+	text-decoration: underline;
 }
 
 .address-block {
@@ -50,7 +56,6 @@ a {
  	font-size: 1.25em;
  	line-height: 2.5em;
  	color: white;
-	text-decoration: none;
  }
 
 .all-header .header-logo, .header-raffbecker  {
@@ -135,6 +140,10 @@ a {
 	z-index: 0;
 }
 
+#david-pg .atty-nav-bar {
+	height: 205em;
+}
+
 .atty-nav-bar a {
 	color: #000000;
 }
@@ -158,7 +167,7 @@ a {
 }
 
 .atty-sub-lists {
-	margin: 0 0 0 4em;
+	margin: 0 0 2em 1em;
 }
 
 .atty-sub-lists h3 {
@@ -170,6 +179,40 @@ a {
 }
 
 
+.atty-sub-lists dt {
+	position: relative;
+	display: inline-block;
+    width: 35%;
+/*    text-align: right;*/
+    font-weight: bold;
+    color: #660000;
+    line-height: 1.65em;	
+}
+
+.atty-sub-lists dt:after {
+	content: ":";
+	}
+
+.atty-sub-lists dd {
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 0;
+    padding: 0 0 0.75em 36%;
+    vertical-align: middle;
+    width: 60%;
+    line-height: 1.3em;
+}
+
+.atty-sub-lists dd:nth-child(2) {
+	    padding: 0 0 0.25em 0;
+
+	}
+
+.dd-special {
+	font-style: italic; 
+}
+
+
 body {
 	font-family: 'Muli', Arial, sans-serif;
 	line-height: 1.75em;
@@ -177,44 +220,7 @@ body {
 	background: #F7F9F8;
 }
 
-.body-wrap-top {
-	background: white;
-}
 
-.body-wrap-top .float-right-vert {
-	position: relative;
-  	top: 5em;
-  	float: right;
-  	margin-right: -3em;
-}
-
-.body-wrap-top .float-right-vert .contact-button {
-	width: 8em;
-	height: 8em;
-	background: #025454;
-	color: white;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	text-align: center;
-	cursor: pointer;
-}
-
-.body-wrap-top .float-right-vert .contact-button a {
-	color: white;
-	text-decoration: none;
-	font-size: 1.75em;
-  	line-height: 3em;
-}
-
-.body-wrap-top .right-block-top h3 {
-	font-family: 'Sacramento', serif;
-	font-size: 300%;
-	margin: 2em 0 0 40%;
-	color: #660000;
-}
 
 .call-button, .email-button {
 	margin: 1em;
@@ -250,6 +256,45 @@ header {
 
 .hidden {
 	display: none;
+}
+
+.index-wrap-top {
+	background: #ffffff;
+}
+
+.index-wrap-top .float-right-vert {
+	position: relative;
+  	top: 5em;
+  	float: right;
+  	margin-right: -3em;
+}
+
+.index-wrap-top .float-right-vert .contact-button {
+	width: 8em;
+	height: 8em;
+	background: #025454;
+	color: white;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	text-align: center;
+	cursor: pointer;
+}
+
+.index-wrap-top .float-right-vert .contact-button a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.75em;
+  	line-height: 3em;
+}
+
+.index-wrap-top .right-block-top h3 {
+	font-family: 'Sacramento', serif;
+	font-size: 300%;
+	margin: 2em 0 0 40%;
+	color: #660000;
 }
 
 
@@ -496,6 +541,7 @@ li.first-li {
 .right-block-top.atty-block .pa-redirect-area h2 {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	margin: 0 0 1.5em 0;
+	color: #333333;
 }
 
 .right-block-top.atty-block .pa-redirect-area #employees-btn, #employers-btn {
@@ -509,7 +555,11 @@ li.first-li {
 	width: 35%;
 }
 
-#susan-pg {
+/*#susan-pg {
+	background: #ffffff;
+}*/
+
+.atty-pg {
 	background: #ffffff;
 }
 
