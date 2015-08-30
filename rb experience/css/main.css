@@ -156,14 +156,24 @@ a::hover {
 }
 
 .atty-nav-bar .not-here {
-	font-size: 1.25em;
+	font-size: 1.15em;
 	cursor: pointer;
 	line-height: 2em;
 	width: 8em;
 }
 
-.atty-page-pic #ssalaz-pic, .atty-page-pic #draff-pic, {
+.atty-nav-bar .not-here a:hover {
+	color: #025454;
+	font-weight: 900;
+	font-size: 1.1em;
+}
+
+.atty-page-pic, .atty-page-pic #draff-pic, {
 	width: 100%;
+}
+
+#ssalaz-pic {
+	width: 65%;
 }
 
 .atty-sub-lists {
@@ -525,12 +535,12 @@ li.first-li {
 	display: inline-block;
 }
 
-.right-block-top.atty-block p {
+/*.right-block-top.atty-block p {
 	margin-top: 3em;
-}
+}*/
 
 .right-block-top.atty-block .pa-redirect-area {
-	margin: 2em 2em 19em 2em;
+	margin: 2em 2em 13.8em 2em;
 }
 
 .right-block-top.atty-block .pa-redirect-area h2 {

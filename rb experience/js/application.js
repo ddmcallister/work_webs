@@ -23,39 +23,6 @@ function main() {
 
  
 
-/*	function playVideo() { 
-		$("#index-vid-a").removeClass("hidden");    
-	   	$("#vid-pic").css('display', 'none');
-	   	$("#index-vid-b").css('display', 'none');
-	   	var vid = $("#index-vid-a");
-	    vid.controls = false;
-	    vid.load();
-	    vid.on('ended',function(){
-	    	$(vid).css('display', 'none');
-			$("#index-vid-b").css('display', 'inline-block');
-			var vidb = $("#index-vid-b");
-			vidb.controls = false;
-	    	vidb.load();
-	    	vidb.on('ended',function(){    
-	   			$(vidb).css('display', 'none');
-				$("#vid-pic").css('display', 'inline-block');
-			});
-	}); 
-
-	}
-	playVideo();*/
-
-
-/*<script type="text/javascript">
-var video= $('#myvideo')[0]; 
-var videoJ= $('#myvideo');        
-videoJ.on('ended',function(){
-    video.load();     
-});
-</script>*/
-
-
-
 }
 
 $(document).ready(main);
