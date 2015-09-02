@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 #index-pic-wr {
-	  height: 12em;
+	  height: 10em;
 	  margin-top: 4em;
 }
 
@@ -283,10 +283,18 @@ h1, h2, h3, h4, h5, p {
 
 
 
-.index-wrap-top .right-block-top h3 {
+
+/*.index-wrap-top .right-block-top h3 {
 	font-family: 'Sacramento', serif;
 	font-size: 300%;
 	margin: 0.5em 0 0 70%;
+	color: #660000;
+}*/
+
+#index-exp {
+	font-family: 'Sacramento', serif;
+	font-size: 400%;
+	margin: 0 0 0 60%;
 	color: #660000;
 }
 
@@ -294,8 +302,8 @@ h1, h2, h3, h4, h5, p {
     width: 90%;
     padding: 0 5%;
     margin: 2em 0;
+display: none;
 }
-
 
 .left-block-top  {
   position: relative;
@@ -340,6 +348,10 @@ h1, h2, h3, h4, h5, p {
 
 .left-block-top.atty-block p {
 	margin-top: 3em;
+}
+
+li {
+	font-size: 1.4em
 }
 
 li.no-show {
@@ -431,26 +443,26 @@ li.first-li {
 }
 
 #pa-examples {
-	display: inline-block;
-    text-align: left;
+	display: none;
+    text-align: right;
     margin-right: 6em;
-    padding: 1.75em 0 0 0;
+    padding: 0;
     float: right;
-    margin-top: -2.5em;
 }
 
-.page-break-a {
+#page-break-a {
 	height: 4em;
+	display: none;
 }
 
-.page-break-a h2 {
+#page-break-a h2 {
 	padding: 0.75em 0 .25em 1em;
   	font-size: 175%;
   	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: 400;
 }
 
-.page-width-banner, .page-break-a {
+.page-width-banner, #page-break-a {
   	width: 99%;
   	height: 8em;
   	position: relative;
@@ -538,6 +550,7 @@ li.first-li {
 .right-block-top.atty-page-pic {
 	width: 35%;
 }
+
 
 ul {
 	width: 400px;
