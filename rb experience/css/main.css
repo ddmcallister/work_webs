@@ -236,12 +236,13 @@ h1, h2, h3, h4, h5, p {
 
 #index-pic-wr {
 	  height: 10em;
-	  margin-top: 4em;
+	  width: 100%;
 }
 
 #index-rbt {
-	width: 80%;
-	margin-left: 5%;
+	width: 40%;
+	position: relative;
+	display: inline-block;
 }
 
 .float-right-vert {
@@ -294,15 +295,16 @@ h1, h2, h3, h4, h5, p {
 #index-exp {
 	font-family: 'Sacramento', serif;
 	font-size: 400%;
-	margin: 0 0 0 60%;
+	margin: 0 0 0 40%;
 	color: #660000;
+	font-style: normal;
 }
 
 #index-text {
-    width: 90%;
     padding: 0 5%;
     margin: 2em 0;
-display: none;
+    position: relative;
+    display: inline-block;
 }
 
 .left-block-top  {
@@ -357,17 +359,17 @@ li {
 li.no-show {
 	opacity: 0;
 	height: 0;
-	position: relative;
+/*	position: relative;
 	font-family: 'Fjalla One', sans-serif;
   	color: #BE3100;
-  	font-size: 1.4em;
+  	font-size: 1.4em;*/
 }
 
 li.first-li {
 	position: relative;
-	font-family: 'Fjalla One', sans-serif;
+/*	font-family: 'Fjalla One', sans-serif;
   	color: #BE3100;
-  	font-size: 1.4em;
+  	font-size: 1.4em;*/
 }
 
 .middle-body-wrap {
@@ -429,17 +431,39 @@ li.first-li {
 	color: #BE3100;
 }
 
-.middle-body-wrap .text-block {
+.text-block {
 	position: relative;
   	vertical-align: top;
-  	display: inline-block;
-  	width: 20%;
+  	display: none;
   	padding: 0 3%;
+}
+
+#pretty-text {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+
+}
+
+#pretty-text h2 {
+/*	font-family: 'Josefin Slab', Georgia, serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 500%;
+	font-size: 400%;*/
+	line-height: 1.5em;
+
+}
+
+#fix-height {
+	position: relative;
+	height: 20em;
 }
 
 #pa-flip{
 	position: relative;
 	display: inline-block;
+
 }
 
 #pa-examples {
@@ -452,7 +476,13 @@ li.first-li {
 
 #page-break-a {
 	height: 4em;
-	display: none;
+/*	display: none;*/
+}
+
+#page-break-a a:hover {
+	font-size: 120%;
+	color: #BE3100;
+
 }
 
 #page-break-a h2 {
@@ -460,9 +490,10 @@ li.first-li {
   	font-size: 175%;
   	font-family: 'Playfair Display', Georgia, serif;
   	font-weight: 400;
+  	float: right;
 }
 
-.page-width-banner, #page-break-a {
+.page-width-banner {
   	width: 99%;
   	height: 8em;
   	position: relative;
@@ -553,6 +584,5 @@ li.first-li {
 
 
 ul {
-	width: 400px;
 	list-style: none;
 }
