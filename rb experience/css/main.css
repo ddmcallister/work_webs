@@ -2,13 +2,70 @@
 	margin: 0;
 }
 
+.moving-text-wrapper {
+	width: 50%;
+	height: 20em;
+	position: relative;
+	display: inline-block;
+	font-family: 'Muli';
+	padding: 10px;
+}
+
+.moving-text {
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.moving-text {
+	color: #000;
+}
+
+.mt-sentence-1 h2{
+	width: 100%;
+	height: 4em;
+	opacity: 0;
+	color: #000;
+	position: absolute;
+	display: inline;
+	-webkit-animation-name: rotateSentence;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s; 
+	-webkit-animation-iteration-count: 1;
+}
+.mt-sentence-2 {
+	-webkit-animation: fadeInSentence 9s linear 1 0s;
+}
+
+.mt-sentence-1 h2:nth-child(2) { 
+	-webkit-animation-delay: 3s; 
+	color: #000;
+}
+.mt-sentence-1 h2:nth-child(3) { 
+	-webkit-animation-delay: 6s; 
+	color: #000;	
+}
+
+@-webkit-keyframes rotateSentence {
+    0% { opacity: 1; -webkit-animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeInSentence {
+
+}
+
 a {
 	color: #025454;
 	text-decoration: none;
 
 }
 
-a::hover {
+a:hover {
 	text-decoration: underline;
 }
 
@@ -235,8 +292,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 #index-pic-wr {
-	  height: 10em;
 	  width: 100%;
+	  margin: -8em 2em 0 2em;
 }
 
 #index-rbt {
@@ -267,8 +324,7 @@ h1, h2, h3, h4, h5, p {
 
 
 #index-contact-button {
-	margin-right: -2em;
-	margin-top: 5em;
+	margin: 4em -2em 0 0;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
@@ -356,21 +412,7 @@ li {
 	font-size: 1.4em
 }
 
-li.no-show {
-	opacity: 0;
-	height: 0;
-/*	position: relative;
-	font-family: 'Fjalla One', sans-serif;
-  	color: #BE3100;
-  	font-size: 1.4em;*/
-}
 
-li.first-li {
-	position: relative;
-/*	font-family: 'Fjalla One', sans-serif;
-  	color: #BE3100;
-  	font-size: 1.4em;*/
-}
 
 .middle-body-wrap {
 	padding: 3em 0;
@@ -460,30 +502,22 @@ li.first-li {
 	height: 20em;
 }
 
-#pa-flip{
-	position: relative;
-	display: inline-block;
 
-}
-
-#pa-examples {
-	display: none;
-    text-align: right;
-    margin-right: 6em;
-    padding: 0;
-    float: right;
-}
 
 #page-break-a {
 	height: 4em;
-/*	display: none;*/
+	margin: 0 0 4em 0;
+}
+
+#page-break-a a {
+	color: #BE3100;
 }
 
 #page-break-a a:hover {
-	font-size: 120%;
-	color: #BE3100;
-
+	color: #025454;
 }
+
+
 
 #page-break-a h2 {
 	padding: 0.75em 0 .25em 1em;
