@@ -24,6 +24,22 @@ function main() {
 	cycleThru();
 
 	//}, 4000); 
+
+/*var pushLeft = new Menu({
+  wrapper: '#o-wrapper',
+  type: 'push-left',
+  menuOpenerClass: '.c-button',
+  maskId: '#c-mask'
+});
+
+var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+pushLeftBtn.addEventListener('click', function(e) {
+  e.preventDefault;
+  pushLeft.open();
+});*/
+
+
 }
 
 $(document).ready(main);
