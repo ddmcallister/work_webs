@@ -297,12 +297,31 @@ a {
 	width: 65%;
 }
 
+.atty-pg-pic-cap {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 65%;
+}
+
 #areas-of-prac {
 	width: 215%;
+	font-size: .75em;
 }
 
 #areas-of-prac ul li {
 	display: inline;
+}
+
+.vertical {
+	width: 2px;
+	color: #D8D8D8;
+  	background-color: #D8D8D8;
+	height: 1em;
+ 	margin: 0px;
+  	border: 0px;
+	display: inline-block;
+	vertical-align: -20%;
 }
 
 
@@ -719,7 +738,7 @@ li {
 }
 
 .right-block-top {
-	width: 40%;
+	width: 30%;
 	padding-bottom: 2.5em;
 	vertical-align: top;
 }
@@ -759,11 +778,12 @@ li {
 .right-block-top.atty-block .pa-redirect-area #employees-btn, #employers-btn {
 	font-family: 'Sacramento', serif;
 	font-size: 2.5em;
-	float: right;
-	margin: 0 0 1em 0;
+	margin: 0 0 1em 1em;
 }
 
 
 ul {
 	list-style: none;
 }
+
+

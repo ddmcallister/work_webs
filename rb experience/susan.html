@@ -44,16 +44,20 @@
 			</div>	
 			<div class="left-block-top atty-block">
 				<img class="img-responsive" alt="Responsive image" id="ssalaz-pic" src="./img/Susan-web.JPG"/>
+				<div>
+					<div class="atty-pg-pic-cap">Susan Salazar</div>
+					<div class="atty-pg-pic-cap">Senior Counsel</div>
+				</div>
 				<div id="areas-of-prac">
-					<h2>Areas of Practice</h2>
+<!-- 					<h2>Areas of Practice</h2> -->
 					<ul>
-						<li>Litigation</li>
-						<li>Labor and Employment</li>
-						<li>Wages and Overtime</li>
-						<li>Discrimination</li>
-						<li>Harassment</li>
-						<li>Workplace Complaint Investigations</li>
-						<li>Contracts</li>
+						<li>Litigation</li><hr class="vertical">
+						<li>Labor and Employment</li><hr class="vertical">
+						<li>Wages and Overtime</li><hr class="vertical">
+						<li>Discrimination</li><hr class="vertical">
+						<li>Harassment</li><hr class="vertical">
+						<li>Workplace Complaint Investigations</li><hr class="vertical">
+						<li>Contracts</li><hr class="vertical">
 						<li>Unemployment Insurance</li>
 					</ul>
 				</div>
@@ -107,12 +111,22 @@
   	  	<button class="c-menu__close">&larr; Close Menu</button>
 	</nav>
 	<nav id="c-menu--push-left-b" class="c-menu c-menu--push-left">
-  		<ul class="c-menu__items">
-		    <li class="c-menu__item"><a href="#" class="c-menu__link">Something</a></li>
-		    <li class="c-menu__item"><a href="#" class="c-menu__link">Something Else</a></li>
-		    <li class="c-menu__item"><a href="#" class="c-menu__link">A third thing</a></li>
-		    <li class="c-menu__item"><a href="#" class="c-menu__link">Etc.</a></li>
-  		</ul>
+  		<div class="rb-contact" id="contact-form">
+			<form action=" " method="post" id="contact_form" enctype="text/plain" autocomplete="off">
+				<label for="myname">Name</label>
+				<input type="text" id="myname" name="myname" maxlength="30" required>
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone" maxlength= "11" minlength="10" required>
+				<label for="email">Email</label>
+				<input type="email" id="myemail" name="myemail" maxlength = "40">
+		    	<h4 id="txt-hdr">Tell us about your employment-related legal problem.</h4>
+				<textarea name="comments" id="comments" maxlength="250"></textarea>
+				<button type="submit" name="request_submit" value="send_request" id="submit_butn">Submit</button>
+			</form>
+		</div>
+		<div class="contact-line">
+			<span>Raff &amp; Becker <hr class="vertical"> 470 Park Avenue South <hr class="vertical"> 3rd Floor North <hr class="vertical"> New York, NY  10016 <hr class="vertical"> 212-732-5400</span>
+		</div>
   	  	<button class="c-menu__close">&larr; Close Menu</button>
 	</nav>
 
